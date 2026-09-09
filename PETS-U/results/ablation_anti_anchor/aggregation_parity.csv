@@ -1,0 +1,14 @@
+level,system,reference,max_abs_error,tolerance,pass
+denoiser_output,PETS_U_BF_EFULL_DFULL,native BF-FULL,0.0,1e-07,True
+denoiser_output,PETS_U_BF_EAA_DFA,audited legacy ANTI_ANCHOR,0.0,1e-07,True
+denoiser_output,PETS_U_BF_EFA_DFA,audited FIXED_ANCHOR,0.0,1e-07,True
+encoder TimesBlock output,PETS_U_BF_EFULL_DFULL,native BF-FULL,0.0,1e-07,True
+encoder TimesBlock output,PETS_U_BF_EAA_DFA,audited legacy ANTI_ANCHOR,0.0,1e-07,True
+encoder TimesBlock output,PETS_U_BF_EFA_DFA,audited FIXED_ANCHOR,0.0,1e-07,True
+decoder TimesBlock output,PETS_U_BF_EFULL_DFULL,native BF-FULL,0.0,1e-07,True
+decoder TimesBlock output,PETS_U_BF_EAA_DFA,audited legacy ANTI_ANCHOR,0.0,1e-07,True
+decoder TimesBlock output,PETS_U_BF_EFA_DFA,audited FIXED_ANCHOR,0.0,1e-07,True
+one_reverse_step,PETS_U_BF_EFULL_DFULL,native,0.0,1e-07,True
+short_deterministic_trajectory,PETS_U_BF_EFULL_DFULL,native,0.0,1e-07,True
+one_reverse_step,PETS_U_BF_EAA_DFA,legacy,0.0,1e-07,True
+short_deterministic_trajectory,PETS_U_BF_EAA_DFA,legacy,0.0,1e-07,True

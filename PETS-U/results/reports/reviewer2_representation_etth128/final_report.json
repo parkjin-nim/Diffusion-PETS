@@ -1,0 +1,531 @@
+{
+  "marker": "REVIEWER2_REPRESENTATION_ETTH128_PETSU_V1",
+  "status": "COMPLETE",
+  "scope": "controlled ETTh-128 representation comparison",
+  "definitions": {
+    "Period-Aligned 2D": "Production global batch-shared full-rFFT distinct-period selection, period-aligned 2D Inception processing, normalized spectral aggregation.",
+    "STFT / Spectrogram": "Same global selection/top-k, nearest fixed STFT bins, complex real/imaginary spectrogram, fixed parameter-matched 2D convolution.",
+    "Frequency-as-Channel": "Same global selection/top-k, selected complex rFFT coefficients projected and broadcast over the unchanged 1D time axis, fixed parameter-matched 1D convolution."
+  },
+  "standard_checkpoint_provenance": [
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "model_seed": 0,
+      "checkpoint": "/path/to/PETS-FFT-Ablation/results/true_unconditional_pets_vs_diffts/training/PETS_U/seed_0/checkpoints/checkpoint-10.pt",
+      "sha256": "0a934787cd6c41b5bd6ece93c10f79135b6bc5bebddbf64ab6b38fab9fcbf7cd",
+      "step": 18000,
+      "has_model": true,
+      "has_ema": true,
+      "source_commit": "4aa3638ba34482165326dc9114c6c87b1ed0180e",
+      "status": "EXACT_READY",
+      "reused": true,
+      "source_experiment": "TRUE_UNCONDITIONAL_PETS_VS_DIFFTS_ETTH_V1"
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "model_seed": 42,
+      "checkpoint": "/path/to/PETS-FFT-Ablation/results/true_unconditional_pets_vs_diffts/training/PETS_U/seed_42/checkpoints/checkpoint-10.pt",
+      "sha256": "1e01ac267aecb1168c8bfa316da9b49807df8a003d21b79384ceafc5a3636973",
+      "step": 18000,
+      "has_model": true,
+      "has_ema": true,
+      "source_commit": "4aa3638ba34482165326dc9114c6c87b1ed0180e",
+      "status": "EXACT_READY",
+      "reused": true,
+      "source_experiment": "TRUE_UNCONDITIONAL_PETS_VS_DIFFTS_ETTH_V1"
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "model_seed": 123,
+      "checkpoint": "/path/to/PETS-FFT-Ablation/results/true_unconditional_pets_vs_diffts/training/PETS_U/seed_123/checkpoints/checkpoint-10.pt",
+      "sha256": "562a89cc61b59ea5e1b977775bc6ed4ec20d3fd34f587e58387577b99710155a",
+      "step": 18000,
+      "has_model": true,
+      "has_ema": true,
+      "source_commit": "4aa3638ba34482165326dc9114c6c87b1ed0180e",
+      "status": "EXACT_READY",
+      "reused": true,
+      "source_experiment": "TRUE_UNCONDITIONAL_PETS_VS_DIFFTS_ETTH_V1"
+    }
+  ],
+  "newly_trained_models": 6,
+  "parameters": [
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "total_trainable_parameters": 1591564,
+      "representation_module_parameters_combined": 1148034,
+      "representation_module_parameters_per_block": 574017,
+      "parameter_delta_vs_pets_u": 0,
+      "parameter_delta_vs_pets_u_percent": 0.0,
+      "model_input_shape": "(2, 128, 7)",
+      "input_shape": "(2, 128, 64)",
+      "internal_representation_shape": "per candidate: [B,64,ceil(128/p),p]",
+      "output_shape": "(2, 128, 64)",
+      "denoiser_output_shape": "(2, 128, 7)",
+      "representation_module_calls_per_denoiser_forward": 2,
+      "output_shape_parity": true,
+      "anti_anchor_transform_absent": true,
+      "within_10_percent_parameter_budget": true
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "total_trainable_parameters": 1591716,
+      "representation_module_parameters_combined": 1148186,
+      "representation_module_parameters_per_block": 574093,
+      "parameter_delta_vs_pets_u": 152,
+      "parameter_delta_vs_pets_u_percent": 0.0132400259922615,
+      "model_input_shape": "(2, 128, 7)",
+      "input_shape": "(2, 128, 64)",
+      "internal_representation_shape": "(2, 128, 9, 13)",
+      "output_shape": "(2, 128, 64)",
+      "denoiser_output_shape": "(2, 128, 7)",
+      "representation_module_calls_per_denoiser_forward": 2,
+      "output_shape_parity": true,
+      "anti_anchor_transform_absent": true,
+      "within_10_percent_parameter_budget": true
+    },
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "total_trainable_parameters": 1593528,
+      "representation_module_parameters_combined": 1149998,
+      "representation_module_parameters_per_block": 574999,
+      "parameter_delta_vs_pets_u": 1964,
+      "parameter_delta_vs_pets_u_percent": 0.1710750726894848,
+      "model_input_shape": "(2, 128, 7)",
+      "input_shape": "(2, 128, 64)",
+      "internal_representation_shape": "(2, 9, 128)",
+      "output_shape": "(2, 128, 64)",
+      "denoiser_output_shape": "(2, 128, 7)",
+      "representation_module_calls_per_denoiser_forward": 2,
+      "output_shape_parity": true,
+      "anti_anchor_transform_absent": true,
+      "within_10_percent_parameter_budget": true
+    }
+  ],
+  "aggregated_metrics": [
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "metric": "context_fid",
+      "mean": 0.90046728332494,
+      "sample_sd": 0.04638134979066472,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "metric": "correlational_score",
+      "mean": 0.07754552265008291,
+      "sample_sd": 0.0073409398601306025,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "metric": "discriminative_score",
+      "mean": 0.1488617886178862,
+      "sample_sd": 0.013988524895052624,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "metric": "predictive_score",
+      "mean": 0.11526077324377992,
+      "sample_sd": 0.00035716360464325763,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "metric": "spectral_fidelity_error",
+      "mean": 0.0014626799130804658,
+      "sample_sd": 3.7944040721391545e-05,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "metric": "period_histogram_jsd",
+      "mean": 0.014725997827449095,
+      "sample_sd": 0.0023531609534986385,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "metric": "amplitude_fidelity_error",
+      "mean": 0.01712000641593738,
+      "sample_sd": 0.0007133878875246127,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "metric": "slope_fidelity_error",
+      "mean": 0.00782145016350897,
+      "sample_sd": 0.00011664946804631106,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "metric": "curvature_fidelity_error",
+      "mean": 0.01305292682449583,
+      "sample_sd": 0.0004369295409403757,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "metric": "turning_point_fidelity_error",
+      "mean": 0.07044872419453897,
+      "sample_sd": 0.006396847944095062,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "metric": "context_fid",
+      "mean": 1.059168124486151,
+      "sample_sd": 0.0962862810342489,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "metric": "correlational_score",
+      "mean": 0.10522521585226059,
+      "sample_sd": 0.011831887603071313,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "metric": "discriminative_score",
+      "mean": 0.17424119241192415,
+      "sample_sd": 0.0127661262461754,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "metric": "predictive_score",
+      "mean": 0.11610736725320343,
+      "sample_sd": 0.0011096342294987607,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "metric": "spectral_fidelity_error",
+      "mean": 0.0014591346503325987,
+      "sample_sd": 9.584877749578567e-05,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "metric": "period_histogram_jsd",
+      "mean": 0.023729278493093597,
+      "sample_sd": 0.007420289443538255,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "metric": "amplitude_fidelity_error",
+      "mean": 0.01959412066231282,
+      "sample_sd": 0.0010070847476232733,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "metric": "slope_fidelity_error",
+      "mean": 0.00752253856679021,
+      "sample_sd": 0.00028874438018315705,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "metric": "curvature_fidelity_error",
+      "mean": 0.01193868581142029,
+      "sample_sd": 0.0002414504080841115,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "metric": "turning_point_fidelity_error",
+      "mean": 0.06431594122023815,
+      "sample_sd": 0.004506947341147631,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "metric": "context_fid",
+      "mean": 0.8478911938319321,
+      "sample_sd": 0.13123880520245415,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "metric": "correlational_score",
+      "mean": 0.12626093228658042,
+      "sample_sd": 0.004690487381998034,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "metric": "discriminative_score",
+      "mean": 0.16594850948509487,
+      "sample_sd": 0.017026762970002645,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "metric": "predictive_score",
+      "mean": 0.11774633974117832,
+      "sample_sd": 0.0012799931936773742,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "metric": "spectral_fidelity_error",
+      "mean": 0.0014081561723453602,
+      "sample_sd": 6.895230643262117e-05,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "metric": "period_histogram_jsd",
+      "mean": 0.04262057890710263,
+      "sample_sd": 0.003937827829809556,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "metric": "amplitude_fidelity_error",
+      "mean": 0.017819522499895265,
+      "sample_sd": 0.0014410423431282413,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "metric": "slope_fidelity_error",
+      "mean": 0.007232568695392097,
+      "sample_sd": 0.0005084455555849761,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "metric": "curvature_fidelity_error",
+      "mean": 0.012953213535684712,
+      "sample_sd": 0.0005707063018634235,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "metric": "turning_point_fidelity_error",
+      "mean": 0.0874149659863946,
+      "sample_sd": 0.0021161547556234105,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    }
+  ],
+  "efficiency": [
+    {
+      "representation": "Frequency-as-Channel",
+      "representation_key": "frequency_as_channel",
+      "mean_sampling_seconds_per_generated_batch": 38.92699113488197,
+      "sampling_seconds_sd": 0.05919552997723771,
+      "mean_peak_gpu_memory_mb": 3696.5831380208333,
+      "peak_gpu_memory_mb": 3696.85302734375,
+      "total_trainable_parameters": 1593528,
+      "representation_module_parameters_combined": 1149998
+    },
+    {
+      "representation": "Period-Aligned 2D",
+      "representation_key": "period_aligned_2d",
+      "mean_sampling_seconds_per_generated_batch": 147.6744728386402,
+      "sampling_seconds_sd": 1.5640400511052215,
+      "mean_peak_gpu_memory_mb": 580.0978190104166,
+      "peak_gpu_memory_mb": 581.43115234375,
+      "total_trainable_parameters": 1591564,
+      "representation_module_parameters_combined": 1148034
+    },
+    {
+      "representation": "STFT / Spectrogram",
+      "representation_key": "stft_spectrogram",
+      "mean_sampling_seconds_per_generated_batch": 126.50600475668907,
+      "sampling_seconds_sd": 0.07600408297612808,
+      "mean_peak_gpu_memory_mb": 555.59423828125,
+      "peak_gpu_memory_mb": 555.70361328125,
+      "total_trainable_parameters": 1591716,
+      "representation_module_parameters_combined": 1148186
+    }
+  ],
+  "scientific_questions": {
+    "1_period_aligned_outperforms_stft": {
+      "answer": true,
+      "winning_metrics": [
+        "context_fid",
+        "correlational_score",
+        "discriminative_score",
+        "predictive_score",
+        "period_histogram_jsd"
+      ]
+    },
+    "2_period_aligned_outperforms_frequency_as_channel": {
+      "answer": true,
+      "winning_metrics": [
+        "correlational_score",
+        "discriminative_score",
+        "predictive_score",
+        "period_histogram_jsd"
+      ]
+    },
+    "3_best_period_distribution": "Period-Aligned 2D",
+    "4_best_spectral_fidelity": "Frequency-as-Channel",
+    "5_stft_wins_any_metric": {
+      "answer": true,
+      "metrics": [
+        "curvature_fidelity_error",
+        "turning_point_fidelity_error"
+      ]
+    },
+    "6_frequency_channel_efficiency_advantage": {
+      "answer": true,
+      "sampling_speedup_vs_period_aligned": 3.7936266979111837,
+      "peak_memory_ratio_vs_period_aligned": 6.372344485498669,
+      "individual_metric_wins": [
+        "context_fid",
+        "spectral_fidelity_error",
+        "slope_fidelity_error"
+      ]
+    },
+    "7_quality_efficiency_tradeoff": "Frequency-as-Channel is 3.79x faster per generated batch but uses 6.37x the peak sampling memory of Period-Aligned 2D. STFT is 14.3% faster than Period-Aligned 2D. Period-Aligned 2D wins four primary metrics and period-JSD; no composite score was used.",
+    "8_cycle_phase_geometry_supported": {
+      "answer": "PARTIALLY_SUPPORTED",
+      "evidence": "Period-Aligned 2D is best on period-histogram JSD and on the correlational, discriminative, and predictive scores.",
+      "limitation": "Frequency-as-Channel is best on Context-FID and spectral fidelity, while STFT is best on curvature and turning-point fidelity; therefore the evidence supports period-distribution preservation, not universal superiority on every cycle-related metric."
+    },
+    "9_claim_moderation": "Restrict the claim to a controlled ETTh-128 comparison. State that Frequency-as-Channel wins Context-FID, spectral fidelity, and slope fidelity, while STFT wins curvature and turning-point fidelity."
+  },
+  "integrity_verdicts": [
+    "ONLY_ETTH128_EXECUTED",
+    "TRUE_UNCONDITIONAL_PETSU_ONLY",
+    "ANTI_ANCHOR_NOT_USED",
+    "NO_PETSF_COMPONENT_USED",
+    "NO_DATASET_EXPANSION",
+    "NO_HYPERPARAMETER_SEARCH",
+    "NO_TEST_DRIVEN_TUNING",
+    "SAME_BACKBONE_CONFIRMED",
+    "SAME_E_LASTBEFORED_PLACEMENT_CONFIRMED",
+    "SAME_TOPK_POLICY_CONFIRMED",
+    "SAME_OBJECTIVE_CONFIRMED",
+    "SAME_EVALUATORS_CONFIRMED",
+    "PAIRED_GENERATION_PROTOCOL_CONFIRMED",
+    "ALL_RESULTS_REPORTED",
+    "HISTORICAL_ARTIFACTS_UNCHANGED"
+  ],
+  "configuration_conflicts": {
+    "prompt_base_learning_rate": 0.0001,
+    "production_base_learning_rate": 1e-05,
+    "production_warmup_target_learning_rate": 0.0001,
+    "resolution": "Use the exact production base=1e-5 and warm-up target=1e-4 for all variants so representation remains the only factor.",
+    "prompt_period_formula": "ceil(T/f)",
+    "production_period_formula": "floor(T/f) via integer division",
+    "period_resolution": "Use the production floor definition for all variants because parity is mandatory.",
+    "prompt_gpu_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "host_gpu_ids": [
+      0,
+      1,
+      2
+    ],
+    "gpu_resolution": "Use every GPU that actually exists: 0, 1, and 2; no GPU 3 is fabricated.",
+    "scientific_factor_changed": false
+  }
+}

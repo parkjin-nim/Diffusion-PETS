@@ -1,0 +1,24 @@
+{
+  "marker": "FINAL_UNCONDITIONAL_MAIN_ETTH_AIRQUALITY_ENERGY_V1",
+  "hard_gates": true,
+  "training": {
+    "complete": 54,
+    "total": 54,
+    "reused": 21,
+    "new_complete": 33,
+    "active_equivalent": 0.0,
+    "active_runs": [],
+    "percent": 100.0
+  },
+  "sampling": {
+    "complete": 270,
+    "total": 270,
+    "percent": 100.0
+  },
+  "metric_units": {
+    "complete": 2700,
+    "total": 2700,
+    "percent": 100.0
+  },
+  "time": "2026-08-13T06:31:36.597768+00:00"
+}

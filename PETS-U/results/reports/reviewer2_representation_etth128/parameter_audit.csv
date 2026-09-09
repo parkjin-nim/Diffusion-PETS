@@ -1,0 +1,4 @@
+representation,representation_key,total_trainable_parameters,representation_module_parameters_combined,representation_module_parameters_per_block,parameter_delta_vs_pets_u,parameter_delta_vs_pets_u_percent,model_input_shape,input_shape,internal_representation_shape,output_shape,denoiser_output_shape,representation_module_calls_per_denoiser_forward,output_shape_parity,anti_anchor_transform_absent,within_10_percent_parameter_budget
+Period-Aligned 2D,period_aligned_2d,1591564,1148034,574017,0,0.0,"(2, 128, 7)","(2, 128, 64)","per candidate: [B,64,ceil(128/p),p]","(2, 128, 64)","(2, 128, 7)",2,True,True,True
+STFT / Spectrogram,stft_spectrogram,1591716,1148186,574093,152,0.013240025992261553,"(2, 128, 7)","(2, 128, 64)","(2, 128, 9, 13)","(2, 128, 64)","(2, 128, 7)",2,True,True,True
+Frequency-as-Channel,frequency_as_channel,1593528,1149998,574999,1964,0.1710750726894848,"(2, 128, 7)","(2, 128, 64)","(2, 9, 128)","(2, 128, 64)","(2, 128, 7)",2,True,True,True

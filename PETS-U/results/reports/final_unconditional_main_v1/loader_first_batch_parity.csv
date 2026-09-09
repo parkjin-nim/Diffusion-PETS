@@ -1,0 +1,10 @@
+dataset,sequence_length,pets_shape,diffts_shape,max_abs_error,same_raw_hash,same_feature_order,pass
+ETTh,64,"(4096, 64, 7)","(4096, 64, 7)",0.0,True,True,True
+ETTh,128,"(4096, 128, 7)","(4096, 128, 7)",0.0,True,True,True
+ETTh,256,"(4096, 256, 7)","(4096, 256, 7)",0.0,True,True,True
+AirQuality,64,"(4096, 64, 9)","(4096, 64, 9)",0.0,True,True,True
+AirQuality,128,"(4096, 128, 9)","(4096, 128, 9)",0.0,True,True,True
+AirQuality,256,"(4096, 256, 9)","(4096, 256, 9)",0.0,True,True,True
+Energy,64,"(4096, 64, 28)","(4096, 64, 28)",0.0,True,True,True
+Energy,128,"(4096, 128, 28)","(4096, 128, 28)",0.0,True,True,True
+Energy,256,"(4096, 256, 28)","(4096, 256, 28)",0.0,True,True,True

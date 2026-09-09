@@ -1,0 +1,5 @@
+dataset,trajectories,pets_lower_mae,pets_lower_crps,pets_lower_both,delta_mae_percent,delta_crps_percent
+ETTh,10,True,True,True,-13.362904224341687,-14.61760553768583
+ETTh,100,True,True,True,-16.075414186714465,-19.188470815134984
+AirQuality,10,True,True,True,-26.321955492680495,-18.273601156004293
+AirQuality,100,True,True,True,-18.219248264434206,-7.13593897874103

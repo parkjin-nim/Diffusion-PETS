@@ -1,0 +1,106 @@
+{
+  "verdict": "DIFFTS_METRIC_PROTOCOL_CONFIRMED",
+  "real_reference": {
+    "source": "ETTh full unconditional train-window construction",
+    "source_window_count": 17293,
+    "evaluation_count": 4096,
+    "selection": "fixed without-replacement RNG 2026080201 shared by every system",
+    "sequence_length": 128,
+    "features": [
+      "HUFL",
+      "HULL",
+      "MUFL",
+      "MULL",
+      "LUFL",
+      "LULL",
+      "OT"
+    ],
+    "scaling": "dataset-global MinMax [0,1]"
+  },
+  "context_fid": {
+    "source": "Diff-ts/Utils/context_fid.py",
+    "TS2Vec": {
+      "input_dims": 7,
+      "batch_size": 8,
+      "learning_rate": 0.001,
+      "output_dims": 320,
+      "max_train_length": 3000,
+      "fit_data": "real reference only",
+      "fit_iterations": 600,
+      "pooling": "full_series"
+    },
+    "mean_covariance": "numpy mean/cov(rowvar=False), scipy.linalg.sqrtm; complex part discarded; no added regularizer",
+    "evaluator_seeds": [
+      0,
+      42,
+      123
+    ],
+    "reuse": "one exactly real-fitted frozen evaluator per seed, shared across systems"
+  },
+  "correlation_score": {
+    "source": "Diff-ts/Utils/cross_correlation.py",
+    "definition": "lag-0 lower-triangular channel cross-correlation after standardization over sample/time axes; absolute difference summed by channel pair and divided by 10",
+    "sample_count": 4096,
+    "repetitions": 1,
+    "deterministic": true
+  },
+  "discriminative_score": {
+    "source": "Diff-ts/Utils/discriminative_metric.py",
+    "architecture": "TensorFlow v1 GRU, tanh, hidden_dim=floor(7/2)=3, dense sigmoid head",
+    "real_fake_split": "independent 80/20 train/test for real and fake",
+    "optimizer": "tf1 AdamOptimizer default learning rate 0.001",
+    "iterations": 2000,
+    "batch_size": 128,
+    "early_stopping": false,
+    "class_balancing": "one real and one fake batch per iteration",
+    "statistic": "abs(combined test accuracy - 0.5)",
+    "evaluator_seeds": [
+      0,
+      42,
+      123
+    ]
+  },
+  "predictive_score": {
+    "source": "Diff-ts/Utils/predictive_metric.py",
+    "architecture": "TensorFlow v1 GRU, tanh, hidden_dim=floor(7/2)=3, time-distributed dense sigmoid",
+    "training": "synthetic-only; features 0:6 at t predict last feature at t+1",
+    "evaluation": "all fixed real reference windows",
+    "protocol": "TSTR one-step last-channel",
+    "optimizer": "tf1 AdamOptimizer default learning rate 0.001",
+    "iterations": 5000,
+    "batch_size": 128,
+    "early_stopping": false,
+    "statistic": "mean per-window MAE",
+    "evaluator_seeds": [
+      0,
+      42,
+      123
+    ]
+  },
+  "directions": {
+    "context_fid": {
+      "direction": "lower_is_better",
+      "definition": "Frechet distance of full-series TS2Vec embeddings; TS2Vec input_dims=7, batch=8, lr=0.001, output=320, max_train_length=3000, default 600 fit iterations; scipy sqrtm covariance."
+    },
+    "correlation_score": {
+      "direction": "lower_is_better",
+      "definition": "L1 norm of the difference between real and generated lag-0 channel cross-correlation matrices, divided by 10."
+    },
+    "discriminative_score": {
+      "direction": "lower_is_better",
+      "definition": "abs(real/fake post-hoc GRU test accuracy - 0.5); hidden=floor(C/2), 80/20 independent real/fake split, Adam, 2000 iterations, batch 128."
+    },
+    "predictive_score": {
+      "direction": "lower_is_better",
+      "definition": "TSTR one-step last-channel MAE; GRU hidden=floor(C/2), synthetic-only training, real evaluation, Adam, 5000 iterations, batch 128."
+    }
+  },
+  "implementation": "Diff-ts/Utils originals; the local evaluation/generative_metrics.py PyTorch convenience discriminator/predictor is audited for provenance but is not used for headline evaluation",
+  "repetitions": "three predeclared evaluator seeds for every trainable metric; deterministic correlation once per generation cell",
+  "benchmark_marker": "FINAL_UNCONDITIONAL_MAIN_ETTH_AIRQUALITY_ENERGY_V1",
+  "verdicts": [
+    "CONTROLLED_ETTH128_METRIC_PARITY_PASS",
+    "DIFFTS_COMPATIBLE_EVALUATOR_EXACTLY_FROZEN"
+  ],
+  "cross_length_feature_adaptation": "same constructors; TS2Vec input_dims and GRU hidden=floor(C/2) follow dataset C"
+}

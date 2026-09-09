@@ -1,0 +1,5 @@
+placement,placement_key,encoder_timesblock_locations,decoder_timesblock_locations,timesblock_count,total_trainable_parameters,timesblock_specific_parameters,spectral_module_calls_per_denoiser_forward,input_shape,output_shape,output_shape_pass,checkpoint_source,training_required,quality_evaluation_allowed,anti_anchor_absent,parameter_delta_vs_proposed,parameter_delta_vs_proposed_percent
+E + LastBeforeD,e_last_before_d,after E3 / encoder output,after D2 / immediately before D3,2,1591564,1148034,2,"(2, 128, 7)","(2, 128, 7)",True,reused standard PETS-U,False,True,True,0,0.0
+E + MidD,e_mid_d,after E3 / encoder output,after D1 / before D2,2,1591564,1148034,2,"(2, 128, 7)","(2, 128, 7)",True,new isolated training,True,True,True,0,0.0
+E-only,e_only,after E3 / encoder output,none,1,1017547,574017,1,"(2, 128, 7)","(2, 128, 7)",True,new isolated training,True,True,True,-574017,-36.06622165366897
+All-Layers (cost only),all_layers_cost_only,"after E1, E2, E3","after D1, D2, D3 / pre-output",6,3887632,3444102,6,"(2, 128, 7)","(2, 128, 7)",True,not trained; cost only,False,False,True,2296068,144.26488661467587

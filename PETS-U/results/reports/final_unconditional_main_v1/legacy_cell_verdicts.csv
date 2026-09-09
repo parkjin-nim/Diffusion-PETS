@@ -1,0 +1,73 @@
+dataset,sequence_length,method_label,metric,verdict,reason
+ETTh,128,Diffusion-TS,context_fid,LEGACY_CELL_EXACTLY_CONFIRMED,controlled ETTh-128 artifact has complete checkpoint/sample/evaluator provenance
+ETTh,128,Diffusion-TS,correlation_score,LEGACY_CELL_EXACTLY_CONFIRMED,controlled ETTh-128 artifact has complete checkpoint/sample/evaluator provenance
+ETTh,128,Diffusion-TS,discriminative_score,LEGACY_CELL_EXACTLY_CONFIRMED,controlled ETTh-128 artifact has complete checkpoint/sample/evaluator provenance
+ETTh,128,Diffusion-TS,predictive_score,LEGACY_CELL_EXACTLY_CONFIRMED,controlled ETTh-128 artifact has complete checkpoint/sample/evaluator provenance
+ETTh,128,PETS-U,context_fid,LEGACY_CELL_EXACTLY_CONFIRMED,controlled ETTh-128 artifact has complete checkpoint/sample/evaluator provenance
+ETTh,128,PETS-U,correlation_score,LEGACY_CELL_EXACTLY_CONFIRMED,controlled ETTh-128 artifact has complete checkpoint/sample/evaluator provenance
+ETTh,128,PETS-U,discriminative_score,LEGACY_CELL_EXACTLY_CONFIRMED,controlled ETTh-128 artifact has complete checkpoint/sample/evaluator provenance
+ETTh,128,PETS-U,predictive_score,LEGACY_CELL_EXACTLY_CONFIRMED,controlled ETTh-128 artifact has complete checkpoint/sample/evaluator provenance
+ETTh,64,PETS-U,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,64,PETS-U,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,64,PETS-U,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,64,PETS-U,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,64,Diffusion-TS,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,64,Diffusion-TS,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,64,Diffusion-TS,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,64,Diffusion-TS,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,256,PETS-U,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,256,PETS-U,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,256,PETS-U,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,256,PETS-U,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,256,Diffusion-TS,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,256,Diffusion-TS,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,256,Diffusion-TS,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+ETTh,256,Diffusion-TS,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,64,PETS-U,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,64,PETS-U,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,64,PETS-U,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,64,PETS-U,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,64,Diffusion-TS,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,64,Diffusion-TS,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,64,Diffusion-TS,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,64,Diffusion-TS,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,128,PETS-U,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,128,PETS-U,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,128,PETS-U,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,128,PETS-U,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,128,Diffusion-TS,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,128,Diffusion-TS,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,128,Diffusion-TS,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,128,Diffusion-TS,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,256,PETS-U,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,256,PETS-U,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,256,PETS-U,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,256,PETS-U,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,256,Diffusion-TS,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,256,Diffusion-TS,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,256,Diffusion-TS,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+AirQuality,256,Diffusion-TS,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,64,PETS-U,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,64,PETS-U,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,64,PETS-U,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,64,PETS-U,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,64,Diffusion-TS,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,64,Diffusion-TS,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,64,Diffusion-TS,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,64,Diffusion-TS,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,128,PETS-U,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,128,PETS-U,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,128,PETS-U,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,128,PETS-U,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,128,Diffusion-TS,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,128,Diffusion-TS,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,128,Diffusion-TS,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,128,Diffusion-TS,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,256,PETS-U,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,256,PETS-U,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,256,PETS-U,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,256,PETS-U,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,256,Diffusion-TS,context_fid,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,256,Diffusion-TS,correlation_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,256,Diffusion-TS,discriminative_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories
+Energy,256,Diffusion-TS,predictive_score,LEGACY_CELL_PROVENANCE_UNRESOLVED,exact revision main-table LaTeX/result lineage was not found in the available repositories

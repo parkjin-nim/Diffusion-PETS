@@ -1,0 +1,12 @@
+tensor,max_abs_error,tolerance,pass
+state_dict,0.0,1e-07,True
+denoiser_output,0.0,1e-07,True
+encoder_selected_periods,0.0,1e-07,True
+encoder_period_weights,0.0,1e-07,True
+encoder_timesblock_output,0.0,1e-07,True
+encoder_fused_feature,0.0,1e-07,True
+decoder_selected_periods,0.0,1e-07,True
+decoder_period_weights,0.0,1e-07,True
+decoder_timesblock_output,0.0,1e-07,True
+decoder_fused_feature,0.0,1e-07,True
+one_reverse_step,0.0,1e-07,True

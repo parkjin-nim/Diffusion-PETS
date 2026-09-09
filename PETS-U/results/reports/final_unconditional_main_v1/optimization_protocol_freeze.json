@@ -1,0 +1,25 @@
+{
+  "verdicts": [
+    "PETS_LR_SCHEDULE_LOCKED_BEFORE_OUTCOMES",
+    "DIFFTS_NATIVE_LR_SCHEDULE_LOCKED_BEFORE_OUTCOMES",
+    "NO_RESULT_DRIVEN_LR_TUNING",
+    "TRAINING_BUDGET_FAIRNESS_CONFIRMED"
+  ],
+  "PETS-U": {
+    "base_lr": 1e-05,
+    "warmup_target": 0.0001,
+    "warmup_steps": 500,
+    "optimizer": "Adam betas=(0.9,0.96)",
+    "steps": 18000,
+    "effective_batch": 128
+  },
+  "Diffusion-TS": {
+    "base_lr": 1e-05,
+    "warmup_target": 0.0001,
+    "warmup_steps": 500,
+    "optimizer": "native Adam betas=(0.9,0.96)",
+    "steps": 18000,
+    "effective_batch": 128
+  },
+  "energy_native_note": "Energy example YAML states 25k; frozen controlled benchmark uses common 18k budget, selected before outcomes."
+}

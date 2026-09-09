@@ -1,0 +1,5 @@
+dataset,sequence_length,method,metric,controlled_value,legacy_value,difference,explanation
+ETTh,128,PETS-U,context_fid,0.90046728332494,,,"legacy revision value unavailable/unresolved; controlled value uses 3 model seeds, 5 draws, 4096 samples, fixed Diff-ts evaluator"
+ETTh,128,PETS-U,correlation_score,0.07754552265008291,,,"legacy revision value unavailable/unresolved; controlled value uses 3 model seeds, 5 draws, 4096 samples, fixed Diff-ts evaluator"
+ETTh,128,PETS-U,discriminative_score,0.1488617886178862,,,"legacy revision value unavailable/unresolved; controlled value uses 3 model seeds, 5 draws, 4096 samples, fixed Diff-ts evaluator"
+ETTh,128,PETS-U,predictive_score,0.11526077324377991,,,"legacy revision value unavailable/unresolved; controlled value uses 3 model seeds, 5 draws, 4096 samples, fixed Diff-ts evaluator"

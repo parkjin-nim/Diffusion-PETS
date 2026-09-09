@@ -1,0 +1,14 @@
+{
+  "dataset": "AirQuality",
+  "frozen_method_sha256": "73f98fbc186d250a81a37c8748079bdde9348a04b0e132694aec5f54e19bfa2a",
+  "future_rows_used_for_selection": false,
+  "marker": "HISTCOND_CG64_FINAL_FORECAST_V1",
+  "metrics_computed": true,
+  "model_predictions_loaded": true,
+  "opened_at": "2026-08-07T03:54:25.924455+00:00",
+  "prior_lock_sha256": "a218f5206703501ee621ee1a6157979dcf86ededb3dd62789fdc6205f0836065",
+  "settings_changed_after_open": false,
+  "status": "OPENED_AFTER_FREEZE",
+  "test_start": 8422,
+  "unlock_requires": "frozen_final_method.json"
+}

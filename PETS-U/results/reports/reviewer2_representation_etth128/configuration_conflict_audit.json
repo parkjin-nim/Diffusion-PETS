@@ -1,0 +1,22 @@
+{
+  "prompt_base_learning_rate": 0.0001,
+  "production_base_learning_rate": 1e-05,
+  "production_warmup_target_learning_rate": 0.0001,
+  "resolution": "Use the exact production base=1e-5 and warm-up target=1e-4 for all variants so representation remains the only factor.",
+  "prompt_period_formula": "ceil(T/f)",
+  "production_period_formula": "floor(T/f) via integer division",
+  "period_resolution": "Use the production floor definition for all variants because parity is mandatory.",
+  "prompt_gpu_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "host_gpu_ids": [
+    0,
+    1,
+    2
+  ],
+  "gpu_resolution": "Use every GPU that actually exists: 0, 1, and 2; no GPU 3 is fabricated.",
+  "scientific_factor_changed": false
+}

@@ -1,0 +1,12 @@
+{
+  "/path/to/Diffusion-TS/Utils/context_fid.py": "9b62aa34ce970655cf9024ac72a8e3467a8a58000cdc2df4a224bfcfa6cfd5f3",
+  "/path/to/Diffusion-TS/Utils/cross_correlation.py": "54f556799325274065a59d07ce76c26ede3be329b099f9fd679e89a0cb115ece",
+  "/path/to/Diffusion-TS/Utils/discriminative_metric.py": "63c187d65b0ed8331fdbf7f3d455b9ef830a8537190072949f73c5909df4450f",
+  "/path/to/Diffusion-TS/Utils/predictive_metric.py": "5ecade7ae04dbc190fc6229282c2c9d63dcbecd2f14d554aae3e656eb04c15f8",
+  "/path/to/Diffusion-TS/Utils/metric_utils.py": "f3997991a179bcf47813063e381aad57a565a7690c7243fa2733e2742432eb76",
+  "/path/to/Diffusion-TS/Models/ts2vec/ts2vec.py": "87ea8fb9e59974604ce5e8d992a39049c00e1ea9267982cdfb7bab06e2565048",
+  "/path/to/Diffusion-TS/Experiments/metric_pytorch.ipynb": "706caae6a1195d5c7fc826dc6df153b3e2f5cc06bfa9ae2266ecfe64b6c87892",
+  "/path/to/Diffusion-TS/Experiments/metric_tensorflow.ipynb": "af6571d4f218c79534a04e1f28a4e3615d67aa5c29d800397afeecb2dbbb039d",
+  "/path/to/Diffusion-TS/evaluation/generative_metrics.py": "5355f391b6f1fd48e883c6d5ae7ae9a0dec0945e18527c528ac84bb656f96c02",
+  "/path/to/Diffusion-TS/Uncond/etth/uncond_etth_128.ipynb": "a1345dae0c0cc08874104dd5bd3acd3decbfc05f58ad48589d1d3825ea8294c1"
+}

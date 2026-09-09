@@ -1,0 +1,17 @@
+{
+  "verdict": "LOCKED_ETTH128_PETSU_REFERENCE_CONFIRMED",
+  "five_draw_ids": [
+    100000,
+    100001,
+    100002,
+    100003,
+    100004
+  ],
+  "model_seeds": [
+    0,
+    42,
+    123
+  ],
+  "sample_count": 4096,
+  "pass": true
+}

@@ -1,0 +1,8 @@
+{
+  "wins": 14,
+  "ties": 0,
+  "losses": 22,
+  "adverse_cells": 22,
+  "rows": 72,
+  "paper_statistic": "mean and sample SD across model seeds after nested aggregation"
+}

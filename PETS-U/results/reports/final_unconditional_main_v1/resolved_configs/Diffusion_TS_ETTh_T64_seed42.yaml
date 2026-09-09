@@ -1,0 +1,84 @@
+model:
+  target: Models.interpretable_diffusion.gaussian_diffusion.Diffusion_TS
+  params:
+    seq_length: 64
+    feature_size: 7
+    n_layer_enc: 3
+    n_layer_dec: 3
+    d_model: 64
+    timesteps: 500
+    sampling_timesteps: 500
+    loss_type: l1
+    beta_schedule: cosine
+    n_heads: 4
+    mlp_hidden_times: 4
+    attn_pd: 0.0
+    resid_pd: 0.0
+    kernel_size: 1
+    padding_size: 0
+    configs:
+      top_k: 7
+      d_ff: 128
+      num_kernels: 3
+solver:
+  base_lr: 1.0e-05
+  max_epochs: 18000
+  results_folder: /path/to/PETS-FFT-Ablation/results/final_unconditional_main_v1/work/Diffusion_TS/ETTh/T64/seed_42/checkpoints
+  gradient_accumulate_every: 2
+  save_cycle: 1800
+  ema:
+    decay: 0.995
+    update_interval: 10
+  scheduler:
+    target: engine.lr_sch.ReduceLROnPlateauWithWarmup
+    params:
+      factor: 0.5
+      patience: 4000
+      min_lr: 1.0e-06
+      threshold: 0.0001
+      threshold_mode: rel
+      warmup_lr: 0.0001
+      warmup: 500
+      verbose: false
+dataloader:
+  train_dataset:
+    target: Utils.Data_utils.real_datasets.CustomDataset
+    params:
+      name: etth
+      proportion: 1.0
+      data_root: /path/to/Diffusion-TS/Data/datasets/ETTh.csv
+      window: 64
+      save2npy: true
+      neg_one_to_one: true
+      seed: 123
+      period: train
+  test_dataset:
+    target: Utils.Data_utils.real_datasets.CustomDataset
+    params:
+      name: etth
+      proportion: 0.9
+      data_root: ./Data/datasets/ETTh.csv
+      window: 128
+      save2npy: true
+      neg_one_to_one: true
+      seed: 123
+      period: test
+      style: separate
+      distribution: geometric
+    coefficient: 0.01
+    step_size: 0.05
+    sampling_steps: 200
+  batch_size: 128
+  sample_size: 256
+  shuffle: true
+experiment:
+  marker: FINAL_UNCONDITIONAL_MAIN_ETTH_AIRQUALITY_ENERGY_V1
+  model_family: Diffusion-TS
+  dataset: ETTh
+  sequence_length: 64
+  model_seed: 42
+  true_unconditional: true
+  period_formula: null
+  aggregation: FULL
+  anti_anchor: false
+  pets_f: false

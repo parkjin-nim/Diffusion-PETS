@@ -1,0 +1,294 @@
+{
+  "active_seeds": [
+    0,
+    42,
+    123
+  ],
+  "airquality_lock": {
+    "dataset": "AirQuality",
+    "frozen_method_sha256": "73f98fbc186d250a81a37c8748079bdde9348a04b0e132694aec5f54e19bfa2a",
+    "future_rows_used_for_selection": false,
+    "marker": "HISTCOND_CG64_FINAL_FORECAST_V1",
+    "metrics_computed": true,
+    "model_predictions_loaded": true,
+    "opened_at": "2026-08-07T03:54:25.924455+00:00",
+    "prior_lock_sha256": "a218f5206703501ee621ee1a6157979dcf86ededb3dd62789fdc6205f0836065",
+    "settings_changed_after_open": false,
+    "status": "OPENED_AFTER_FREEZE",
+    "test_start": 8422,
+    "unlock_requires": "frozen_final_method.json"
+  },
+  "checks": {
+    "airquality_confirmed": true,
+    "catastrophic_degradation": true,
+    "cross_dataset_same_direction": true,
+    "datasets": {
+      "AirQuality": {
+        "acf_ratio": 1.0607304232670247,
+        "clear_advantages": [
+          "ensemble_mean_rmse",
+          "late_33_64_rmse"
+        ],
+        "joint_bad_seed_count": 1,
+        "late_33_64_rmse_ratio": 0.9666320767940388,
+        "noninferior": true,
+        "ratios": {
+          "empirical_crps": 0.9954385620101964,
+          "ensemble_mean_mae": 0.9976234121941463,
+          "ensemble_mean_rmse": 0.969846504628574,
+          "expected_sample_mae": 1.0466664002147237,
+          "normalized_energy_score": 0.9672224537180811,
+          "weighted_interval_score": 0.9657678233895027
+        },
+        "spectral_ratio": 1.0144826307123116,
+        "support": true,
+        "system": "PETS_SELECTED_CALIBRATED"
+      },
+      "ETTh": {
+        "acf_ratio": 0.9425851361365087,
+        "clear_advantages": [
+          "ensemble_mean_mae",
+          "ensemble_mean_rmse",
+          "empirical_crps",
+          "late_33_64_rmse"
+        ],
+        "joint_bad_seed_count": 0,
+        "late_33_64_rmse_ratio": 0.9552818019365034,
+        "noninferior": true,
+        "ratios": {
+          "empirical_crps": 0.969298154386723,
+          "ensemble_mean_mae": 0.968743851482469,
+          "ensemble_mean_rmse": 0.9778715517507321,
+          "expected_sample_mae": 1.0012459793278452,
+          "normalized_energy_score": 0.9505606455489276,
+          "weighted_interval_score": 0.9552056899942611
+        },
+        "spectral_ratio": 0.9619653815995073,
+        "support": true,
+        "system": "PETS_SELECTED_CALIBRATED"
+      },
+      "Energy": {
+        "acf_ratio": 0.9914194214017455,
+        "clear_advantages": [],
+        "joint_bad_seed_count": 3,
+        "late_33_64_rmse_ratio": 1.0916093858640952,
+        "noninferior": false,
+        "ratios": {
+          "empirical_crps": 1.0882027898982747,
+          "ensemble_mean_mae": 1.0610698924157635,
+          "ensemble_mean_rmse": 1.0978658705152575,
+          "expected_sample_mae": 1.0904153947555155,
+          "normalized_energy_score": 1.0080080449846556,
+          "weighted_interval_score": 1.088730217984292
+        },
+        "spectral_ratio": 1.0904546531020805,
+        "support": false,
+        "system": "PETS_SELECTED_CALIBRATED"
+      }
+    },
+    "selected_by_dataset": {
+      "AirQuality": "PETS_SELECTED_CALIBRATED",
+      "ETTh": "PETS_SELECTED_CALIBRATED",
+      "Energy": "PETS_SELECTED_CALIBRATED"
+    },
+    "strong_paper_claim_supported": false
+  },
+  "explicit_statement": "CG64 is an inference-time confidence-gated SH64 policy and does not create a separately trained model.",
+  "frozen_method": {
+    "active_seeds": [
+      0,
+      42,
+      123
+    ],
+    "airquality_lock_at_freeze": {
+      "dataset": "AirQuality",
+      "future_rows_used_for_selection": false,
+      "marker": "HISTCOND_CG64_FINAL_FORECAST_V1",
+      "metrics_computed": false,
+      "model_predictions_loaded": false,
+      "prior_lock_sha256": "a218f5206703501ee621ee1a6157979dcf86ededb3dd62789fdc6205f0836065",
+      "status": "LOCKED",
+      "test_start": 8422,
+      "unlock_requires": "frozen_final_method.json"
+    },
+    "airquality_lock_sha256": "9503664b446af59967d57f92bb207ce9466fe00357908df3d4f56e678472e02a",
+    "cg64_source": "/path/to/PETS-FFT-Ablation/scripts/run_adaptive_period_bank_forecast_advantage.py",
+    "cg64_source_sha256": "f0f97f5fd83b456030844a10eb481387230721a6080be013268880698b8eec82",
+    "checkpoint_rule": "exact step-18000 EMA",
+    "freeze_timestamp": "2026-08-06T15:52:18.955585+00:00",
+    "guidance": "REC",
+    "history_conditioned_training": {
+      "candidate_fft_source": "first_64",
+      "candidate_scope": "sample_wise",
+      "diffusion_target_length": 128,
+      "transform_output_length": 128
+    },
+    "marker": "HISTCOND_CG64_FINAL_FORECAST_V1",
+    "metric_definitions": "run_adaptive_period_bank_forecast_advantage.py",
+    "no_post_freeze_changes": true,
+    "q10_q90_provenance": "current training partition only",
+    "seed_stage": "A",
+    "selected_sampler": "PETS_SHTRAIN_CG64_REC",
+    "selected_tau": {
+      "AirQuality": 1.5,
+      "ETTh": 1.5,
+      "Energy": 1.5
+    },
+    "status": "FROZEN",
+    "success_criteria": "attached task Sections 13,15,19"
+  },
+  "manuscript_claim": "The history-conditioned PETS-F forecasting advantage over Diffusion-TS was confirmed on untouched AirQuality FINAL_TEST, but the prespecified strong cross-dataset paper claim was not fully supported.",
+  "marker": "HISTCOND_CG64_FINAL_FORECAST_V1",
+  "no_settings_changed_after_test_open": true,
+  "prior_artifacts_unchanged": true,
+  "required_questions": [
+    {
+      "answer": "Yes; every selected checkpoint was exact step 18,000 with valid EMA provenance.",
+      "question": "Were the history-conditioned checkpoints verified?"
+    },
+    {
+      "answer": "Yes.",
+      "question": "Were SH64 and CG64 evaluated from identical checkpoints?"
+    },
+    {
+      "answer": "Yes; per-batch initial-noise hashes matched for every paired cell.",
+      "question": "Were initial-noise tensors paired?"
+    },
+    {
+      "answer": "Yes; CG64 bank, weights, confidence and gate were invariant to all future substitutions.",
+      "question": "Did future invariance pass?"
+    },
+    {
+      "answer": "True",
+      "question": "Did Stage A pass?"
+    },
+    {
+      "answer": "False",
+      "question": "Was Stage B triggered?"
+    },
+    {
+      "answer": "Not applicable; Stage A passed, so the predeclared extension was not triggered.",
+      "question": "Were seeds 7 and 2026 trained under the exact matched protocol?"
+    },
+    {
+      "answer": "{'ensemble_mean_mae': {'ratio_equal_dataset_seed_mean': 0.9499158248411026, 'relative_change': -0.0500841751588974, 'improving_seed_count': 3}, 'ensemble_mean_rmse': {'ratio_equal_dataset_seed_mean': 0.9554386862065836, 'relative_change': -0.0445613137934165, 'improving_seed_count': 3}, 'expected_sample_mae': {'ratio_equal_dataset_seed_mean': 0.9478749162848334, 'relative_change': -0.0521250837151665, 'improving_seed_count': 3}, 'empirical_crps': {'ratio_equal_dataset_seed_mean': 0.9560703213301176, 'relative_change': -0.0439296786698825, 'improving_seed_count': 3}, 'normalized_energy_score': {'ratio_equal_dataset_seed_mean': 0.9581235754959088, 'relative_change': -0.0418764245040912, 'improving_seed_count': 3}, 'weighted_interval_score': {'ratio_equal_dataset_seed_mean': 0.960307492596201, 'relative_change': -0.039692507403799, 'improving_seed_count': 3}}",
+      "question": "What are the all-three-seed results?"
+    },
+    {
+      "answer": "Not run because Stage A passed.",
+      "question": "What are the all-five-seed results?"
+    },
+    {
+      "answer": "True",
+      "question": "Did CG64 improve at least four of six primary metrics?"
+    },
+    {
+      "answer": "3",
+      "question": "How many seeds improved CRPS?"
+    },
+    {
+      "answer": "3",
+      "question": "How many seeds improved MAE or Expected MAE?"
+    },
+    {
+      "answer": "False; count=0",
+      "question": "Did any seed jointly degrade MAE and CRPS by more than 2%?"
+    },
+    {
+      "answer": "{'ensemble_mean_mae': -0.008852488824563798, 'ensemble_mean_rmse': -0.00144939006857292, 'expected_sample_mae': -0.010201221238096192, 'empirical_crps': -0.003998639088674483, 'normalized_energy_score': 0.010232022728540846, 'weighted_interval_score': 4.0815876522826144e-05}",
+      "question": "What happened on ETTh?"
+    },
+    {
+      "answer": "{'ensemble_mean_mae': -0.05479320986525704, 'ensemble_mean_rmse': -0.06671957256043759, 'expected_sample_mae': -0.06239808564990401, 'empirical_crps': -0.03513968572153203, 'normalized_energy_score': -0.053043692109682516, 'weighted_interval_score': -0.021900887633155564}",
+      "question": "What happened on Energy?"
+    },
+    {
+      "answer": "{'ensemble_mean_mae': -0.08994420867521535, 'ensemble_mean_rmse': -0.0703274912992945, 'expected_sample_mae': -0.0868553798519226, 'empirical_crps': -0.09600128432010835, 'normalized_energy_score': -0.08537408906281774, 'weighted_interval_score': -0.10072488806996738}",
+      "question": "What happened on AirQuality DEV_VAL?"
+    },
+    {
+      "answer": "PETS_SHTRAIN_CG64_REC",
+      "question": "Which sampler was selected?"
+    },
+    {
+      "answer": "Not applicable; Stage B was not triggered.",
+      "question": "Were all 10 three-of-five subsets reported?"
+    },
+    {
+      "answer": "Not applicable.",
+      "question": "What range of results was observed across the three-of-five subsets?"
+    },
+    {
+      "answer": "True",
+      "question": "Did the selected PETS system beat Diffusion-TS on DEV_VAL?"
+    },
+    {
+      "answer": "{'ETTh': '[]', 'Energy': '[\"MAE\", \"RMSE\", \"EXPECTED_MAE\", \"CRPS\", \"LATE_RMSE\"]', 'AirQuality': '[\"MAE\", \"RMSE\", \"EXPECTED_MAE\", \"CRPS\", \"LATE_RMSE\"]'}",
+      "question": "What clear advantage was frozen?"
+    },
+    {
+      "answer": "True",
+      "question": "Was AirQuality FINAL_TEST unopened at freeze?"
+    },
+    {
+      "answer": "True",
+      "question": "Did the selected method beat TS on AirQuality FINAL_TEST?"
+    },
+    {
+      "answer": "True",
+      "question": "Were CRPS, nES, and WIS non-inferior?"
+    },
+    {
+      "answer": "{'ETTh': 0.9552818019365034, 'Energy': 1.0916093858640952, 'AirQuality': 0.9666320767940388}",
+      "question": "What happened in the 33\u201364 horizon?"
+    },
+    {
+      "answer": "{'AirQuality': {'eligible': True, 'tau': 1.5, 'wis_improved': True}, 'ETTh': {'eligible': True, 'tau': 1.5, 'wis_improved': True}, 'Energy': {'eligible': True, 'tau': 1.5, 'wis_improved': True}}",
+      "question": "Did spread calibration help?"
+    },
+    {
+      "answer": "{'AirQuality': {'gate_mean': 0.6936121600000001, 'floor_fraction': 0.0687285223367697, 'ceiling_fraction': 0.1981672394043528, 'gate_improvement_correlation': -0.44220345779692355}, 'ETTh': {'gate_mean': 0.7332864999999998, 'floor_fraction': 0.05122096486003571, 'ceiling_fraction': 0.285288862418106, 'gate_improvement_correlation': -0.10719817533484789}, 'Energy': {'gate_mean': 0.7038767299999998, 'floor_fraction': 0.0523286237571951, 'ceiling_fraction': 0.18053375196232327, 'gate_improvement_correlation': -0.1320698544441099}}",
+      "question": "What do gate diagnostics show?"
+    },
+    {
+      "answer": "[{'candidate': 'PETS_SELECTED_CALIBRATED', 'reference': 'PETS_SELECTED_UNCALIBRATED', 'metric': 'empirical_crps', 'ci_lower': -2.0847981684065116, 'ci_upper': -1.2403967355455583, 'probability_better': 1.0}, {'candidate': 'PETS_SELECTED_CALIBRATED', 'reference': 'PETS_SELECTED_UNCALIBRATED', 'metric': 'ensemble_mean_mae', 'ci_lower': -2.282682826056555e-07, 'ci_upper': 1.2275083423514873e-07, 'probability_better': 0.6127083333333333}, {'candidate': 'PETS_SELECTED_CALIBRATED', 'reference': 'PETS_SELECTED_UNCALIBRATED', 'metric': 'ensemble_mean_rmse', 'ci_lower': -3.2789090889754715e-07, 'ci_upper': 1.9937006898174112e-07, 'probability_better': 0.5742083333333333}, {'candidate': 'PETS_SELECTED_CALIBRATED', 'reference': 'PETS_SELECTED_UNCALIBRATED', 'metric': 'expected_sample_mae', 'ci_lower': 3.1015804250879833, 'ci_upper': 4.3927670693025, 'probability_better': 0.0}, {'candidate': 'PETS_SELECTED_UNCALIBRATED', 'reference': 'TS_REC_ORIGINAL', 'metric': 'empirical_crps', 'ci_lower': -2.233547277597245, 'ci_upper': 5.607567833049685, 'probability_better': 0.24879166666666666}, {'candidate': 'PETS_SELECTED_UNCALIBRATED', 'reference': 'TS_REC_ORIGINAL', 'metric': 'ensemble_mean_mae', 'ci_lower': -4.235832277072284, 'ci_upper': 4.43452359374302, 'probability_better': 0.44095833333333334}, {'candidate': 'PETS_SELECTED_UNCALIBRATED', 'reference': 'TS_REC_ORIGINAL', 'metric': 'ensemble_mean_rmse', 'ci_lower': -8.463136943072701, 'ci_upper': 6.2034834610143, 'probability_better': 0.44087499999999996}, {'candidate': 'PETS_SELECTED_UNCALIBRATED', 'reference': 'TS_REC_ORIGINAL', 'metric': 'expected_sample_mae', 'ci_lower': -5.323084089796369, 'ci_upper': 3.029325339101097, 'probability_better': 0.614}, {'candidate': 'PETS_SHTRAIN_CG64_REC', 'reference': 'PETS_SHTRAIN_SH64_REC', 'metric': 'empirical_crps', 'ci_lower': -9.608412075896437, 'ci_upper': -1.5652651437655276, 'probability_better': 0.8309583333333332}, {'candidate': 'PETS_SHTRAIN_CG64_REC', 'reference': 'PETS_SHTRAIN_SH64_REC', 'metric': 'ensemble_mean_mae', 'ci_lower': -9.930320963240229, 'ci_upper': -1.740820347332921, 'probability_better': 0.9020416666666667}, {'candidate': 'PETS_SHTRAIN_CG64_REC', 'reference': 'PETS_SHTRAIN_SH64_REC', 'metric': 'ensemble_mean_rmse', 'ci_lower': -15.749565231970822, 'ci_upper': -1.9032809440560792, 'probability_better': 0.7647916666666666}, {'candidate': 'PETS_SHTRAIN_CG64_REC', 'reference': 'PETS_SHTRAIN_SH64_REC', 'metric': 'expected_sample_mae', 'ci_lower': -9.800581518289013, 'ci_upper': -1.826617740079141, 'probability_better': 0.903625}]",
+      "question": "What do bootstrap intervals show?"
+    },
+    {
+      "answer": "True; strong_cross_dataset_claim=False",
+      "question": "Is the forecasting claim supportable?"
+    },
+    {
+      "answer": "The history-conditioned PETS-F forecasting advantage over Diffusion-TS was confirmed on untouched AirQuality FINAL_TEST, but the prespecified strong cross-dataset paper claim was not fully supported.",
+      "question": "What exact manuscript claim is justified?"
+    },
+    {
+      "answer": "No.",
+      "question": "Were any settings changed after test opening?"
+    }
+  ],
+  "scientific_verdict": "HISTCOND_PETS_FORECAST_ADVANTAGE_OVER_TS_CONFIRMED",
+  "selected_sampler": "PETS_SHTRAIN_CG64_REC",
+  "stage_a": {
+    "criteria": {
+      "improvement_threshold": 0.02,
+      "supporting_seeds": 2
+    },
+    "etth_noninferiority": true,
+    "improved_metrics": 6,
+    "joint_bad_seed_count": 0,
+    "marker": "HISTCOND_CG64_FINAL_FORECAST_V1",
+    "passed": true,
+    "seeds": [
+      0,
+      42,
+      123
+    ],
+    "selected_sampler": "CG64_REC",
+    "stage": "A",
+    "status": "COMPLETE"
+  },
+  "stage_b": null,
+  "stage_b_triggered": false,
+  "status": "COMPLETE"
+}

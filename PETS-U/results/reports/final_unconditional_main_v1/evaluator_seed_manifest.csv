@@ -1,0 +1,13 @@
+metric,evaluator_seed,used
+context_fid,0,True
+context_fid,42,True
+context_fid,123,True
+correlation_score,0,False
+correlation_score,42,False
+correlation_score,123,False
+discriminative_score,0,True
+discriminative_score,42,True
+discriminative_score,123,True
+predictive_score,0,True
+predictive_score,42,True
+predictive_score,123,True

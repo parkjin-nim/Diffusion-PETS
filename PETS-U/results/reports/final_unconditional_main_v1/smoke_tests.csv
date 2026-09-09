@@ -1,0 +1,19 @@
+family,sequence_length,features,loss,loss_finite,gradient_finite,checkpoint_reload,one_step_sample_shape,one_step_sample_finite,timesblock_count,period_logic_verified,pass,dataset,verdict
+PETS-U,64,7,1.431342601776123,True,True,True,"[1, 64, 7]",True,2,True,True,ETTh,ETTH_PETS_SMOKE_PASS
+PETS-U,128,7,1.4574579000473022,True,True,True,"[1, 128, 7]",True,2,True,True,ETTh,ETTH_PETS_SMOKE_PASS
+PETS-U,256,7,1.4286059141159058,True,True,True,"[1, 256, 7]",True,2,True,True,ETTh,ETTH_PETS_SMOKE_PASS
+Diffusion-TS,64,7,14.805842399597168,True,True,True,"[1, 64, 7]",True,0,True,True,ETTh,ETTH_DIFFTS_SMOKE_PASS
+Diffusion-TS,128,7,24.733272552490234,True,True,True,"[1, 128, 7]",True,0,True,True,ETTh,ETTH_DIFFTS_SMOKE_PASS
+Diffusion-TS,256,7,37.4985237121582,True,True,True,"[1, 256, 7]",True,0,True,True,ETTh,ETTH_DIFFTS_SMOKE_PASS
+PETS-U,64,9,1.4171273708343506,True,True,True,"[1, 64, 9]",True,2,True,True,AirQuality,AIRQUALITY_PETS_SMOKE_PASS
+PETS-U,128,9,1.4104516506195068,True,True,True,"[1, 128, 9]",True,2,True,True,AirQuality,AIRQUALITY_PETS_SMOKE_PASS
+PETS-U,256,9,1.2826570272445679,True,True,True,"[1, 256, 9]",True,2,True,True,AirQuality,AIRQUALITY_PETS_SMOKE_PASS
+Diffusion-TS,64,9,14.584158897399902,True,True,True,"[1, 64, 9]",True,0,True,True,AirQuality,AIRQUALITY_DIFFTS_SMOKE_PASS
+Diffusion-TS,128,9,24.3337345123291,True,True,True,"[1, 128, 9]",True,0,True,True,AirQuality,AIRQUALITY_DIFFTS_SMOKE_PASS
+Diffusion-TS,256,9,36.71110153198242,True,True,True,"[1, 256, 9]",True,0,True,True,AirQuality,AIRQUALITY_DIFFTS_SMOKE_PASS
+PETS-U,64,28,1.3714972734451294,True,True,True,"[1, 64, 28]",True,2,True,True,Energy,ENERGY_PETS_SMOKE_PASS
+PETS-U,128,28,1.2967140674591064,True,True,True,"[1, 128, 28]",True,2,True,True,Energy,ENERGY_PETS_SMOKE_PASS
+PETS-U,256,28,1.2388877868652344,True,True,True,"[1, 256, 28]",True,2,True,True,Energy,ENERGY_PETS_SMOKE_PASS
+Diffusion-TS,64,28,14.559412002563477,True,True,True,"[1, 64, 28]",True,0,True,True,Energy,ENERGY_DIFFTS_SMOKE_PASS
+Diffusion-TS,128,28,24.220495223999023,True,True,True,"[1, 128, 28]",True,0,True,True,Energy,ENERGY_DIFFTS_SMOKE_PASS
+Diffusion-TS,256,28,37.81144714355469,True,True,True,"[1, 256, 28]",True,0,True,True,Energy,ENERGY_DIFFTS_SMOKE_PASS

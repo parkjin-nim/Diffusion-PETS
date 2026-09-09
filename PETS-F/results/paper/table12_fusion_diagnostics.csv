@@ -1,0 +1,7 @@
+seed,block,relative_contribution,output_cosine
+0,encoder,0.6197789,-0.2694852
+0,decoder,0.3700754,-0.3131938
+42,encoder,0.6773736,-0.265139
+42,decoder,0.4580811,-0.3880586
+123,encoder,0.6075202,-0.2312786
+123,decoder,0.4312818,-0.3223727

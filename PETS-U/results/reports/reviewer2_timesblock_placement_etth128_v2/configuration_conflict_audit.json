@@ -1,0 +1,19 @@
+{
+  "prompt_base_learning_rate": 0.0001,
+  "production_base_learning_rate": 1e-05,
+  "production_warmup_target_learning_rate": 0.0001,
+  "resolution": "Use the exact production base=1e-5 and 500-step warm-up target=1e-4 for every trained placement, preserving reference parity and isolating placement.",
+  "prompt_gpu_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "host_gpu_ids": [
+    0,
+    1,
+    2
+  ],
+  "gpu_resolution": "Use all GPUs that actually exist (0, 1, 2); GPU 3 is absent and is not fabricated.",
+  "scientific_factor_changed": false
+}

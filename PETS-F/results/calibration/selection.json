@@ -1,0 +1,28 @@
+{
+  "marker": "HISTCOND_CG64_FINAL_FORECAST_V1",
+  "selected": {
+    "AirQuality": {
+      "eligible": true,
+      "forecast_advantage_preserved": true,
+      "mean_preserved": true,
+      "tau": 1.5,
+      "wis_improved": true
+    },
+    "ETTh": {
+      "eligible": true,
+      "forecast_advantage_preserved": true,
+      "mean_preserved": true,
+      "tau": 1.5,
+      "wis_improved": true
+    },
+    "Energy": {
+      "eligible": true,
+      "forecast_advantage_preserved": true,
+      "mean_preserved": true,
+      "tau": 1.5,
+      "wis_improved": true
+    }
+  },
+  "selected_system": "PETS_SHTRAIN_CG64_REC",
+  "status": "COMPLETE"
+}

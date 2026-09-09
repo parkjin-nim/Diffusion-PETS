@@ -1,0 +1,87 @@
+model:
+  target: Models.interpretable_diffusion.gaussian_diffusion.Diffusion_TS
+  params:
+    seq_length: 64
+    feature_size: 7
+    n_layer_enc: 3
+    n_layer_dec: 3
+    d_model: 64
+    timesteps: 500
+    sampling_timesteps: 500
+    loss_type: l1
+    beta_schedule: cosine
+    n_heads: 4
+    mlp_hidden_times: 4
+    attn_pd: 0.0
+    resid_pd: 0.0
+    kernel_size: 1
+    padding_size: 0
+    configs:
+      top_k: 7
+      d_ff: 128
+      num_kernels: 3
+      k_mask_temperature: 1.0
+      period_weight_temperature: 1.0
+      timesblock_residual_mode: single
+      period_candidate_scope: batch_shared
+      period_fft_source: full
+      period_fft_history_length: 64
+      period_weight_mode: raw_softmax
+      factor: 2
+      learnable_k: true
+      corrected_ste: true
+solver:
+  base_lr: 1.0e-05
+  max_epochs: 18000
+  results_folder: /tmp/diffusion-pets-public-r2.xUlGLR/PETS-U/artifacts/paper_main/ETTh/T64/seed_123/checkpoints
+  gradient_accumulate_every: 2
+  save_cycle: 1800
+  checkpoint_name_by_step: false
+  ema:
+    decay: 0.995
+    update_interval: 10
+  scheduler:
+    target: engine.lr_sch.ReduceLROnPlateauWithWarmup
+    params:
+      factor: 0.5
+      patience: 4000
+      min_lr: 1.0e-06
+      threshold: 0.0001
+      threshold_mode: rel
+      warmup_lr: 0.0001
+      warmup: 500
+      verbose: false
+dataloader:
+  batch_size: 128
+  sample_size: 256
+  shuffle: true
+  train_dataset:
+    target: Utils.Data_utils.real_datasets.CustomDataset
+    params:
+      name: etth
+      proportion: 1.0
+      data_root: /tmp/diffusion-pets-public-r2.xUlGLR/Data/datasets/ETTh.csv
+      window: 64
+      save2npy: false
+      neg_one_to_one: true
+      seed: 123
+      period: train
+  test_dataset:
+    target: Utils.Data_utils.real_datasets.CustomDataset
+    params:
+      name: etth
+      proportion: 1.0
+      data_root: /tmp/diffusion-pets-public-r2.xUlGLR/Data/datasets/ETTh.csv
+      window: 64
+      save2npy: false
+      neg_one_to_one: true
+      seed: 123
+      period: train
+fft_ablation:
+  variant: FINAL
+  seed: 123
+experiment:
+  marker: PETS_U_FINAL_R2
+  true_unconditional: true
+  training_aggregation: FULL
+  anti_anchor_training: false

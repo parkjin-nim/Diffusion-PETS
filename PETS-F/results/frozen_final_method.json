@@ -1,0 +1,43 @@
+{
+  "active_seeds": [
+    0,
+    42,
+    123
+  ],
+  "airquality_lock_at_freeze": {
+    "dataset": "AirQuality",
+    "future_rows_used_for_selection": false,
+    "marker": "HISTCOND_CG64_FINAL_FORECAST_V1",
+    "metrics_computed": false,
+    "model_predictions_loaded": false,
+    "prior_lock_sha256": "a218f5206703501ee621ee1a6157979dcf86ededb3dd62789fdc6205f0836065",
+    "status": "LOCKED",
+    "test_start": 8422,
+    "unlock_requires": "frozen_final_method.json"
+  },
+  "airquality_lock_sha256": "9503664b446af59967d57f92bb207ce9466fe00357908df3d4f56e678472e02a",
+  "cg64_source": "/path/to/PETS-FFT-Ablation/scripts/run_adaptive_period_bank_forecast_advantage.py",
+  "cg64_source_sha256": "f0f97f5fd83b456030844a10eb481387230721a6080be013268880698b8eec82",
+  "checkpoint_rule": "exact step-18000 EMA",
+  "freeze_timestamp": "2026-08-06T15:52:18.955585+00:00",
+  "guidance": "REC",
+  "history_conditioned_training": {
+    "candidate_fft_source": "first_64",
+    "candidate_scope": "sample_wise",
+    "diffusion_target_length": 128,
+    "transform_output_length": 128
+  },
+  "marker": "HISTCOND_CG64_FINAL_FORECAST_V1",
+  "metric_definitions": "run_adaptive_period_bank_forecast_advantage.py",
+  "no_post_freeze_changes": true,
+  "q10_q90_provenance": "current training partition only",
+  "seed_stage": "A",
+  "selected_sampler": "PETS_SHTRAIN_CG64_REC",
+  "selected_tau": {
+    "AirQuality": 1.5,
+    "ETTh": 1.5,
+    "Energy": 1.5
+  },
+  "status": "FROZEN",
+  "success_criteria": "attached task Sections 13,15,19"
+}

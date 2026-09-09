@@ -1,0 +1,11 @@
+\begin{tabular}{lrrrrrl}
+\toprule
+             placement &  timesblock\_count &  total\_trainable\_parameters &  mean\_denoiser\_forward\_latency\_ms &  std\_denoiser\_forward\_latency\_ms &  peak\_gpu\_memory\_mb &  cost\_only \\
+\midrule
+       E + LastBeforeD &                 2 &                     1591564 &                         30.375967 &                         0.713775 &          232.460938 &      False \\
+              E + MidD &                 2 &                     1591564 &                         30.248397 &                         0.870701 &          236.871094 &      False \\
+                E-only &                 1 &                     1017547 &                         19.423836 &                         0.698014 &          232.563477 &      False \\
+All-Layers (cost only) &                 6 &                     3887632 &                         72.516987 &                         0.670998 &          248.183105 &       True \\
+\bottomrule
+\end{tabular}
+

@@ -1,0 +1,11 @@
+finite=True
+shape_preserved=True
+dtype_preserved=True
+device_preserved=True
+nonnegative_dot=True
+zero_norm_safe=True
+expected_system_differentiation=True
+same_shared_function_encoder_decoder=True
+decomposition_identity_max=5.960464477539063e-08
+maximum_projection_violation=1.7881393432617188e-07
+pass=True

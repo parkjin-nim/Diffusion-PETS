@@ -1,0 +1,13 @@
+placement,placement_key,metric,mean,sample_sd,model_seed_count,draws_per_seed,direction
+E + LastBeforeD,e_last_before_d,context_fid,0.90046728332494,0.04638134979066472,3,5,lower_is_better
+E + LastBeforeD,e_last_before_d,correlational_score,0.07754552265008291,0.0073409398601306025,3,5,lower_is_better
+E + LastBeforeD,e_last_before_d,discriminative_score,0.1488617886178862,0.013988524895052624,3,5,lower_is_better
+E + LastBeforeD,e_last_before_d,predictive_score,0.11526077324377992,0.00035716360464325763,3,5,lower_is_better
+E + MidD,e_mid_d,context_fid,0.7654280730348026,0.07531031036994641,3,5,lower_is_better
+E + MidD,e_mid_d,correlational_score,0.08952443301677704,0.009318581177072512,3,5,lower_is_better
+E + MidD,e_mid_d,discriminative_score,0.12830623306233063,0.002482782716244784,3,5,lower_is_better
+E + MidD,e_mid_d,predictive_score,0.11617182663278275,0.0009350888227005052,3,5,lower_is_better
+E-only,e_only,context_fid,0.7551854423244722,0.024925631887781935,3,5,lower_is_better
+E-only,e_only,correlational_score,0.09621008286873499,0.00944738205628971,3,5,lower_is_better
+E-only,e_only,discriminative_score,0.1522357723577236,0.00948357517830009,3,5,lower_is_better
+E-only,e_only,predictive_score,0.11551131971406599,0.0013919022399570497,3,5,lower_is_better

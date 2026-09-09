@@ -1,0 +1,65 @@
+{
+  "verdict": "PERIOD_FORMULA_FLOOR_CONFIRMED",
+  "decision_inputs_only": [
+    "source_lineage",
+    "checkpoint_parity",
+    "implementation_semantics",
+    "shape_padding_correctness"
+  ],
+  "quality_metrics_used": false,
+  "production_period_formula": "floor(T_s / f_j)",
+  "padding_formula": "ceil(T_s / p_j) * p_j",
+  "source_lineage_floor_consistent": true,
+  "locked_floor_repeat_bit_exact": true,
+  "controlled_ceil_differs": true,
+  "selected_floor_periods": {
+    "encoder": [
+      25,
+      18,
+      11,
+      21,
+      7,
+      64,
+      32,
+      10,
+      128
+    ],
+    "decoder": [
+      25,
+      18,
+      11,
+      7,
+      21,
+      32,
+      128,
+      64,
+      12
+    ]
+  },
+  "selected_ceil_periods": {
+    "encoder": [
+      26,
+      19,
+      12,
+      22,
+      8,
+      64,
+      32,
+      11,
+      128
+    ],
+    "decoder": [
+      26,
+      19,
+      12,
+      8,
+      22,
+      32,
+      128,
+      64,
+      13
+    ]
+  },
+  "checkpoint": "/path/to/PETS-FFT-Ablation/results/true_unconditional_pets_vs_diffts/training/PETS_U/seed_0/checkpoints/checkpoint-10.pt",
+  "checkpoint_sha256": "0a934787cd6c41b5bd6ece93c10f79135b6bc5bebddbf64ab6b38fab9fcbf7cd"
+}

@@ -1,0 +1,5 @@
+placement,placement_key,cost_only,trained,timesblock_count,total_trainable_parameters,timesblock_specific_parameters,spectral_module_calls_per_denoiser_forward,profile_batch_size,sequence_length,dtype,gpu,warmup_forwards,timed_forwards,mean_denoiser_forward_latency_ms,std_denoiser_forward_latency_ms,peak_gpu_memory_mb,quality_metrics_prohibited,parameter_delta_vs_proposed,latency_ratio_vs_proposed,peak_memory_ratio_vs_proposed
+E + LastBeforeD,e_last_before_d,False,True,2,1591564,1148034,2,128,128,float32,0,20,100,30.375966663360597,0.713775193093678,232.4609375,False,0,1.0,1.0
+E + MidD,e_mid_d,False,True,2,1591564,1148034,2,128,128,float32,0,20,100,30.248396797180177,0.8707010073825626,236.87109375,False,0,0.9958003026670985,1.0189716014115275
+E-only,e_only,False,True,1,1017547,574017,1,128,128,float32,0,20,100,19.42383623123169,0.6980139744114101,232.5634765625,False,-574017,0.6394475094898187,1.0004411023357418
+All-Layers (cost only),all_layers_cost_only,True,False,6,3887632,3444102,6,128,128,float32,0,20,100,72.51698677062988,0.670997825555335,248.18310546875,True,2296068,2.3873145363337414,1.0676335909931105

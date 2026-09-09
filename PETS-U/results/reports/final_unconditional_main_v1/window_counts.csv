@@ -1,0 +1,10 @@
+dataset,sequence_length,valid_windows
+ETTh,64,17357
+ETTh,128,17293
+ETTh,256,17165
+AirQuality,64,9294
+AirQuality,128,9230
+AirQuality,256,9102
+Energy,64,19672
+Energy,128,19608
+Energy,256,19480

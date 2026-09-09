@@ -1,0 +1,5 @@
+stage,units,wins,ties,losses,adverse_cells,rows,paper_statistic
+training,54.0,,,,,,
+sampling,270.0,,,,,,
+metric_evaluations,2700.0,,,,,,
+analysis,,14.0,0.0,22.0,22.0,72.0,mean and sample SD across model seeds after nested aggregation

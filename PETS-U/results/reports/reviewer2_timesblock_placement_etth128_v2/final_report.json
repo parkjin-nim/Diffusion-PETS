@@ -1,0 +1,369 @@
+{
+  "marker": "REVIEWER2_TIMESBLOCK_PLACEMENT_ETTH128_MIN_V2",
+  "status": "COMPLETE",
+  "scope": "focused ETTh-128 PETS-U placement ablation",
+  "placements": {
+    "E + LastBeforeD": {
+      "encoder": "after E3 / encoder output",
+      "decoder": "after D2 / immediately before D3",
+      "timesblocks": 2
+    },
+    "E + MidD": {
+      "encoder": "after E3 / encoder output",
+      "decoder": "after D1 / before D2",
+      "timesblocks": 2
+    },
+    "E-only": {
+      "encoder": "after E3 / encoder output",
+      "decoder": "none",
+      "timesblocks": 1
+    },
+    "All-Layers (cost only)": {
+      "encoder": "after E1, E2, E3",
+      "decoder": "after D1, D2, D3 / pre-output",
+      "timesblocks": 6
+    }
+  },
+  "proposed_checkpoint_provenance": [
+    {
+      "placement": "E + LastBeforeD",
+      "placement_key": "e_last_before_d",
+      "model_seed": 0,
+      "checkpoint": "/path/to/PETS-FFT-Ablation/results/true_unconditional_pets_vs_diffts/training/PETS_U/seed_0/checkpoints/checkpoint-10.pt",
+      "sha256": "0a934787cd6c41b5bd6ece93c10f79135b6bc5bebddbf64ab6b38fab9fcbf7cd",
+      "step": 18000,
+      "has_model": true,
+      "has_ema": true,
+      "source_commit": "4aa3638ba34482165326dc9114c6c87b1ed0180e",
+      "status": "EXACT_READY",
+      "reused": true,
+      "source_experiment": "TRUE_UNCONDITIONAL_PETS_VS_DIFFTS_ETTH_V1"
+    },
+    {
+      "placement": "E + LastBeforeD",
+      "placement_key": "e_last_before_d",
+      "model_seed": 42,
+      "checkpoint": "/path/to/PETS-FFT-Ablation/results/true_unconditional_pets_vs_diffts/training/PETS_U/seed_42/checkpoints/checkpoint-10.pt",
+      "sha256": "1e01ac267aecb1168c8bfa316da9b49807df8a003d21b79384ceafc5a3636973",
+      "step": 18000,
+      "has_model": true,
+      "has_ema": true,
+      "source_commit": "4aa3638ba34482165326dc9114c6c87b1ed0180e",
+      "status": "EXACT_READY",
+      "reused": true,
+      "source_experiment": "TRUE_UNCONDITIONAL_PETS_VS_DIFFTS_ETTH_V1"
+    },
+    {
+      "placement": "E + LastBeforeD",
+      "placement_key": "e_last_before_d",
+      "model_seed": 123,
+      "checkpoint": "/path/to/PETS-FFT-Ablation/results/true_unconditional_pets_vs_diffts/training/PETS_U/seed_123/checkpoints/checkpoint-10.pt",
+      "sha256": "562a89cc61b59ea5e1b977775bc6ed4ec20d3fd34f587e58387577b99710155a",
+      "step": 18000,
+      "has_model": true,
+      "has_ema": true,
+      "source_commit": "4aa3638ba34482165326dc9114c6c87b1ed0180e",
+      "status": "EXACT_READY",
+      "reused": true,
+      "source_experiment": "TRUE_UNCONDITIONAL_PETS_VS_DIFFTS_ETTH_V1"
+    }
+  ],
+  "newly_trained_models": 6,
+  "aggregated_metrics": [
+    {
+      "placement": "E + LastBeforeD",
+      "placement_key": "e_last_before_d",
+      "metric": "context_fid",
+      "mean": 0.90046728332494,
+      "sample_sd": 0.04638134979066472,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "placement": "E + LastBeforeD",
+      "placement_key": "e_last_before_d",
+      "metric": "correlational_score",
+      "mean": 0.07754552265008291,
+      "sample_sd": 0.0073409398601306025,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "placement": "E + LastBeforeD",
+      "placement_key": "e_last_before_d",
+      "metric": "discriminative_score",
+      "mean": 0.1488617886178862,
+      "sample_sd": 0.013988524895052624,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "placement": "E + LastBeforeD",
+      "placement_key": "e_last_before_d",
+      "metric": "predictive_score",
+      "mean": 0.11526077324377992,
+      "sample_sd": 0.00035716360464325763,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "placement": "E + MidD",
+      "placement_key": "e_mid_d",
+      "metric": "context_fid",
+      "mean": 0.7654280730348026,
+      "sample_sd": 0.07531031036994641,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "placement": "E + MidD",
+      "placement_key": "e_mid_d",
+      "metric": "correlational_score",
+      "mean": 0.08952443301677704,
+      "sample_sd": 0.009318581177072512,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "placement": "E + MidD",
+      "placement_key": "e_mid_d",
+      "metric": "discriminative_score",
+      "mean": 0.12830623306233063,
+      "sample_sd": 0.002482782716244784,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "placement": "E + MidD",
+      "placement_key": "e_mid_d",
+      "metric": "predictive_score",
+      "mean": 0.11617182663278275,
+      "sample_sd": 0.0009350888227005052,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "placement": "E-only",
+      "placement_key": "e_only",
+      "metric": "context_fid",
+      "mean": 0.7551854423244722,
+      "sample_sd": 0.024925631887781935,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "placement": "E-only",
+      "placement_key": "e_only",
+      "metric": "correlational_score",
+      "mean": 0.09621008286873499,
+      "sample_sd": 0.00944738205628971,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "placement": "E-only",
+      "placement_key": "e_only",
+      "metric": "discriminative_score",
+      "mean": 0.1522357723577236,
+      "sample_sd": 0.00948357517830009,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    },
+    {
+      "placement": "E-only",
+      "placement_key": "e_only",
+      "metric": "predictive_score",
+      "mean": 0.11551131971406599,
+      "sample_sd": 0.0013919022399570497,
+      "model_seed_count": 3,
+      "draws_per_seed": 5,
+      "direction": "lower_is_better"
+    }
+  ],
+  "cost_profile": [
+    {
+      "placement": "E + LastBeforeD",
+      "placement_key": "e_last_before_d",
+      "cost_only": false,
+      "trained": true,
+      "timesblock_count": 2,
+      "total_trainable_parameters": 1591564,
+      "timesblock_specific_parameters": 1148034,
+      "spectral_module_calls_per_denoiser_forward": 2,
+      "profile_batch_size": 128,
+      "sequence_length": 128,
+      "dtype": "float32",
+      "gpu": 0,
+      "warmup_forwards": 20,
+      "timed_forwards": 100,
+      "mean_denoiser_forward_latency_ms": 30.3759666633606,
+      "std_denoiser_forward_latency_ms": 0.713775193093678,
+      "peak_gpu_memory_mb": 232.4609375,
+      "quality_metrics_prohibited": false,
+      "parameter_delta_vs_proposed": 0,
+      "latency_ratio_vs_proposed": 1.0,
+      "peak_memory_ratio_vs_proposed": 1.0
+    },
+    {
+      "placement": "E + MidD",
+      "placement_key": "e_mid_d",
+      "cost_only": false,
+      "trained": true,
+      "timesblock_count": 2,
+      "total_trainable_parameters": 1591564,
+      "timesblock_specific_parameters": 1148034,
+      "spectral_module_calls_per_denoiser_forward": 2,
+      "profile_batch_size": 128,
+      "sequence_length": 128,
+      "dtype": "float32",
+      "gpu": 0,
+      "warmup_forwards": 20,
+      "timed_forwards": 100,
+      "mean_denoiser_forward_latency_ms": 30.248396797180177,
+      "std_denoiser_forward_latency_ms": 0.8707010073825626,
+      "peak_gpu_memory_mb": 236.87109375,
+      "quality_metrics_prohibited": false,
+      "parameter_delta_vs_proposed": 0,
+      "latency_ratio_vs_proposed": 0.9958003026670984,
+      "peak_memory_ratio_vs_proposed": 1.0189716014115275
+    },
+    {
+      "placement": "E-only",
+      "placement_key": "e_only",
+      "cost_only": false,
+      "trained": true,
+      "timesblock_count": 1,
+      "total_trainable_parameters": 1017547,
+      "timesblock_specific_parameters": 574017,
+      "spectral_module_calls_per_denoiser_forward": 1,
+      "profile_batch_size": 128,
+      "sequence_length": 128,
+      "dtype": "float32",
+      "gpu": 0,
+      "warmup_forwards": 20,
+      "timed_forwards": 100,
+      "mean_denoiser_forward_latency_ms": 19.42383623123169,
+      "std_denoiser_forward_latency_ms": 0.6980139744114101,
+      "peak_gpu_memory_mb": 232.5634765625,
+      "quality_metrics_prohibited": false,
+      "parameter_delta_vs_proposed": -574017,
+      "latency_ratio_vs_proposed": 0.6394475094898187,
+      "peak_memory_ratio_vs_proposed": 1.0004411023357418
+    },
+    {
+      "placement": "All-Layers (cost only)",
+      "placement_key": "all_layers_cost_only",
+      "cost_only": true,
+      "trained": false,
+      "timesblock_count": 6,
+      "total_trainable_parameters": 3887632,
+      "timesblock_specific_parameters": 3444102,
+      "spectral_module_calls_per_denoiser_forward": 6,
+      "profile_batch_size": 128,
+      "sequence_length": 128,
+      "dtype": "float32",
+      "gpu": 0,
+      "warmup_forwards": 20,
+      "timed_forwards": 100,
+      "mean_denoiser_forward_latency_ms": 72.51698677062988,
+      "std_denoiser_forward_latency_ms": 0.670997825555335,
+      "peak_gpu_memory_mb": 248.18310546875,
+      "quality_metrics_prohibited": true,
+      "parameter_delta_vs_proposed": 2296068,
+      "latency_ratio_vs_proposed": 2.3873145363337414,
+      "peak_memory_ratio_vs_proposed": 1.0676335909931105
+    }
+  ],
+  "comparisons": {
+    "last_before_d_vs_mid_d": {
+      "metric_delta_mid_minus_last": {
+        "context_fid": -0.13503921029013732,
+        "correlational_score": 0.011978910366694129,
+        "discriminative_score": -0.020555555555555577,
+        "predictive_score": 0.000911053389002825
+      },
+      "last_winning_metrics": [
+        "correlational_score",
+        "predictive_score"
+      ],
+      "last_wins_majority": false
+    },
+    "last_before_d_vs_e_only": {
+      "metric_delta_e_only_minus_last": {
+        "context_fid": -0.14528184100046782,
+        "correlational_score": 0.01866456021865208,
+        "discriminative_score": 0.003373983739837383,
+        "predictive_score": 0.00025054647028606436
+      },
+      "last_winning_metrics": [
+        "correlational_score",
+        "discriminative_score",
+        "predictive_score"
+      ],
+      "last_wins_majority": true,
+      "parameter_increase": 574017,
+      "forward_latency_increase_ms": 10.95213043212891,
+      "peak_memory_increase_mb": -0.1025390625
+    },
+    "all_layers_cost_vs_proposed": {
+      "timesblock_count_ratio": 3.0,
+      "parameter_increase": 2296068,
+      "parameter_ratio": 2.442648866146759,
+      "forward_latency_ratio": 2.387314536333741,
+      "peak_memory_ratio": 1.0676335909931105,
+      "quality_claim": "PROHIBITED_NOT_TRAINED"
+    }
+  },
+  "integrity_verdicts": [
+    "ONLY_ETTH128_EXECUTED",
+    "TRUE_UNCONDITIONAL_PETSU_ONLY",
+    "ANTI_ANCHOR_NOT_USED",
+    "NO_PETSF_COMPONENT_USED",
+    "ONLY_THREE_TRAINED_PLACEMENTS",
+    "NO_EXTRA_PLACEMENT_SEARCH",
+    "ALL_LAYERS_COST_ONLY",
+    "NO_ALL_LAYERS_TRAINING",
+    "NO_ALL_LAYERS_QUALITY_CLAIM",
+    "NO_HYPERPARAMETER_SEARCH",
+    "NO_TEST_DRIVEN_TUNING",
+    "SAME_BACKBONE_CONFIRMED",
+    "SAME_TIMESBLOCK_CONFIRMED",
+    "SAME_ROUTING_CONFIRMED",
+    "SAME_OBJECTIVE_CONFIRMED",
+    "SAME_EVALUATORS_CONFIRMED",
+    "MID_VS_LAST_MODULE_COUNT_MATCHED",
+    "PAIRED_GENERATION_PROTOCOL_CONFIRMED",
+    "ALL_RESULTS_REPORTED",
+    "HISTORICAL_ARTIFACTS_UNCHANGED"
+  ],
+  "configuration_conflicts": {
+    "prompt_base_learning_rate": 0.0001,
+    "production_base_learning_rate": 1e-05,
+    "production_warmup_target_learning_rate": 0.0001,
+    "resolution": "Use the exact production base=1e-5 and 500-step warm-up target=1e-4 for every trained placement, preserving reference parity and isolating placement.",
+    "prompt_gpu_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "host_gpu_ids": [
+      0,
+      1,
+      2
+    ],
+    "gpu_resolution": "Use all GPUs that actually exist (0, 1, 2); GPU 3 is absent and is not fabricated.",
+    "scientific_factor_changed": false
+  }
+}

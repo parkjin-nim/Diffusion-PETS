@@ -1,0 +1,13 @@
+system,reference_system,comparison_scope,site,call_index,same_input,period_identical,raw_score_identical,weight_identical,branch_identical,mask_identical,pass
+PETS_U_BF_EFULL_DFULL,PETS_U_BF_EFULL_DFULL,same_local_timesblock_input,encoder,0,True,True,True,True,True,True,True
+PETS_U_BF_EFULL_DFULL,PETS_U_BF_EFULL_DFULL,same_local_timesblock_input,decoder,0,True,True,True,True,True,True,True
+PETS_U_BF_EAA_DFULL,PETS_U_BF_EFULL_DFULL,same_local_timesblock_input,encoder,0,True,True,True,True,True,True,True
+PETS_U_BF_EAA_DFULL,PETS_U_BF_EAA_DFULL,same_local_timesblock_input,decoder,0,True,True,True,True,True,True,True
+PETS_U_BF_EFULL_DAA,PETS_U_BF_EFULL_DFULL,same_local_timesblock_input,encoder,0,True,True,True,True,True,True,True
+PETS_U_BF_EFULL_DAA,PETS_U_BF_EFULL_DFULL,same_local_timesblock_input,decoder,0,True,True,True,True,True,True,True
+PETS_U_BF_EAA_DAA,PETS_U_BF_EFULL_DFULL,same_local_timesblock_input,encoder,0,True,True,True,True,True,True,True
+PETS_U_BF_EAA_DAA,PETS_U_BF_EAA_DFULL,same_local_timesblock_input,decoder,0,True,True,True,True,True,True,True
+PETS_U_BF_EAA_DFA,PETS_U_BF_EFULL_DFULL,same_local_timesblock_input,encoder,0,True,True,True,True,True,True,True
+PETS_U_BF_EAA_DFA,PETS_U_BF_EAA_DFULL,same_local_timesblock_input,decoder,0,True,True,True,True,True,True,True
+PETS_U_BF_EFA_DFA,PETS_U_BF_EFULL_DFULL,same_local_timesblock_input,encoder,0,True,True,True,True,True,True,True
+PETS_U_BF_EFA_DFA,PETS_U_BF_EFA_DFA,same_local_timesblock_input,decoder,0,True,True,True,True,True,True,True

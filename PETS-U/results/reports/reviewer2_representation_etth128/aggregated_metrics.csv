@@ -1,0 +1,31 @@
+representation,representation_key,metric,mean,sample_sd,model_seed_count,draws_per_seed,direction
+Period-Aligned 2D,period_aligned_2d,context_fid,0.90046728332494,0.04638134979066472,3,5,lower_is_better
+Period-Aligned 2D,period_aligned_2d,correlational_score,0.07754552265008291,0.0073409398601306025,3,5,lower_is_better
+Period-Aligned 2D,period_aligned_2d,discriminative_score,0.1488617886178862,0.013988524895052624,3,5,lower_is_better
+Period-Aligned 2D,period_aligned_2d,predictive_score,0.11526077324377992,0.00035716360464325763,3,5,lower_is_better
+Period-Aligned 2D,period_aligned_2d,spectral_fidelity_error,0.0014626799130804658,3.7944040721391545e-05,3,5,lower_is_better
+Period-Aligned 2D,period_aligned_2d,period_histogram_jsd,0.014725997827449095,0.0023531609534986385,3,5,lower_is_better
+Period-Aligned 2D,period_aligned_2d,amplitude_fidelity_error,0.01712000641593738,0.0007133878875246127,3,5,lower_is_better
+Period-Aligned 2D,period_aligned_2d,slope_fidelity_error,0.00782145016350897,0.00011664946804631106,3,5,lower_is_better
+Period-Aligned 2D,period_aligned_2d,curvature_fidelity_error,0.01305292682449583,0.0004369295409403757,3,5,lower_is_better
+Period-Aligned 2D,period_aligned_2d,turning_point_fidelity_error,0.07044872419453897,0.006396847944095062,3,5,lower_is_better
+STFT / Spectrogram,stft_spectrogram,context_fid,1.059168124486151,0.0962862810342489,3,5,lower_is_better
+STFT / Spectrogram,stft_spectrogram,correlational_score,0.10522521585226059,0.011831887603071313,3,5,lower_is_better
+STFT / Spectrogram,stft_spectrogram,discriminative_score,0.17424119241192415,0.0127661262461754,3,5,lower_is_better
+STFT / Spectrogram,stft_spectrogram,predictive_score,0.11610736725320343,0.0011096342294987607,3,5,lower_is_better
+STFT / Spectrogram,stft_spectrogram,spectral_fidelity_error,0.0014591346503325987,9.584877749578567e-05,3,5,lower_is_better
+STFT / Spectrogram,stft_spectrogram,period_histogram_jsd,0.023729278493093597,0.007420289443538255,3,5,lower_is_better
+STFT / Spectrogram,stft_spectrogram,amplitude_fidelity_error,0.01959412066231282,0.0010070847476232733,3,5,lower_is_better
+STFT / Spectrogram,stft_spectrogram,slope_fidelity_error,0.00752253856679021,0.00028874438018315705,3,5,lower_is_better
+STFT / Spectrogram,stft_spectrogram,curvature_fidelity_error,0.01193868581142029,0.0002414504080841115,3,5,lower_is_better
+STFT / Spectrogram,stft_spectrogram,turning_point_fidelity_error,0.06431594122023815,0.004506947341147631,3,5,lower_is_better
+Frequency-as-Channel,frequency_as_channel,context_fid,0.8478911938319321,0.13123880520245415,3,5,lower_is_better
+Frequency-as-Channel,frequency_as_channel,correlational_score,0.12626093228658042,0.004690487381998034,3,5,lower_is_better
+Frequency-as-Channel,frequency_as_channel,discriminative_score,0.16594850948509487,0.017026762970002645,3,5,lower_is_better
+Frequency-as-Channel,frequency_as_channel,predictive_score,0.11774633974117832,0.0012799931936773742,3,5,lower_is_better
+Frequency-as-Channel,frequency_as_channel,spectral_fidelity_error,0.0014081561723453602,6.895230643262117e-05,3,5,lower_is_better
+Frequency-as-Channel,frequency_as_channel,period_histogram_jsd,0.04262057890710263,0.003937827829809556,3,5,lower_is_better
+Frequency-as-Channel,frequency_as_channel,amplitude_fidelity_error,0.017819522499895265,0.0014410423431282413,3,5,lower_is_better
+Frequency-as-Channel,frequency_as_channel,slope_fidelity_error,0.007232568695392097,0.0005084455555849761,3,5,lower_is_better
+Frequency-as-Channel,frequency_as_channel,curvature_fidelity_error,0.012953213535684712,0.0005707063018634235,3,5,lower_is_better
+Frequency-as-Channel,frequency_as_channel,turning_point_fidelity_error,0.0874149659863946,0.0021161547556234105,3,5,lower_is_better

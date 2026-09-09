@@ -1,0 +1,4 @@
+dataset,absolute_raw_path,sha256,row_count,feature_count,time_column_handling,missing_value_policy,normalization,stride
+ETTh,/path/to/Diffusion-TS/Data/datasets/ETTh.csv,f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066,17420,7,drop first,hard fail,global per-feature MinMax,1
+AirQuality,/path/to/Diffusion-TS/Data/datasets/air_qual.csv,d4bfe2028517a53e73c764466596498de8d7d43376eaf3e484d1688102ac575b,9357,9,none,hard fail,global per-feature MinMax,1
+Energy,/path/to/Diffusion-TS/Data/datasets/energy_data.csv,0869e426fd33995b4028e092e90ae75c38756172c652b287639d4415985901f2,19735,28,none,hard fail,global per-feature MinMax,1

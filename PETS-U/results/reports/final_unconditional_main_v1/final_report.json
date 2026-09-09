@@ -1,0 +1,111 @@
+{
+  "marker": "FINAL_UNCONDITIONAL_MAIN_ETTH_AIRQUALITY_ENERGY_V1",
+  "terminal": "FINAL_UNCONDITIONAL_MAIN_ETTH_AIRQUALITY_ENERGY_COMPLETE",
+  "summary": {
+    "wins": 14,
+    "ties": 0,
+    "losses": 22,
+    "adverse_cells": 22,
+    "rows": 72,
+    "paper_statistic": "mean and sample SD across model seeds after nested aggregation"
+  },
+  "verdicts": [
+    "FINAL_UNCONDITIONAL_SCOPE_CONFIRMED",
+    "ONLY_ETTH_AIRQUALITY_ENERGY_64_128_256",
+    "NO_SEQUENCE_512",
+    "TRUE_UNCONDITIONAL_PETSU_CONFIRMED",
+    "NO_ANTI_ANCHOR",
+    "NO_PETSF_COMPONENTS",
+    "PERIOD_FORMULA_DECISION_COMPLETE",
+    "PETS_LR_SCHEDULE_LOCKED_BEFORE_OUTCOMES",
+    "DIFFTS_PROTOCOL_LOCKED_BEFORE_OUTCOMES",
+    "CONTROLLED_ETTH128_ANCHOR_REPRODUCED",
+    "COMMON_DATA_AND_REFERENCE_SETS_CONFIRMED",
+    "DIFFTS_COMPATIBLE_EVALUATOR_EXACTLY_REUSED",
+    "THREE_MODEL_SEEDS_COMPLETE",
+    "FIVE_DRAWS_COMPLETE",
+    "NO_SEED_EXCLUSION",
+    "NO_CHECKPOINT_CHERRY_PICKING",
+    "NO_RESULT_DRIVEN_RETUNING",
+    "ALL_REQUESTED_CELLS_REPORTED",
+    "LEGACY_MAIN_TABLE_AUDITED",
+    "PAPER_TABLE_GENERATED",
+    "HISTORICAL_ARTIFACTS_UNCHANGED"
+  ],
+  "period_formula": {
+    "verdict": "PERIOD_FORMULA_FLOOR_CONFIRMED",
+    "decision_inputs_only": [
+      "source_lineage",
+      "checkpoint_parity",
+      "implementation_semantics",
+      "shape_padding_correctness"
+    ],
+    "quality_metrics_used": false,
+    "production_period_formula": "floor(T_s / f_j)",
+    "padding_formula": "ceil(T_s / p_j) * p_j",
+    "source_lineage_floor_consistent": true,
+    "locked_floor_repeat_bit_exact": true,
+    "controlled_ceil_differs": true,
+    "selected_floor_periods": {
+      "encoder": [
+        25,
+        18,
+        11,
+        21,
+        7,
+        64,
+        32,
+        10,
+        128
+      ],
+      "decoder": [
+        25,
+        18,
+        11,
+        7,
+        21,
+        32,
+        128,
+        64,
+        12
+      ]
+    },
+    "selected_ceil_periods": {
+      "encoder": [
+        26,
+        19,
+        12,
+        22,
+        8,
+        64,
+        32,
+        11,
+        128
+      ],
+      "decoder": [
+        26,
+        19,
+        12,
+        8,
+        22,
+        32,
+        128,
+        64,
+        13
+      ]
+    },
+    "checkpoint": "/path/to/PETS-FFT-Ablation/results/true_unconditional_pets_vs_diffts/training/PETS_U/seed_0/checkpoints/checkpoint-10.pt",
+    "checkpoint_sha256": "0a934787cd6c41b5bd6ece93c10f79135b6bc5bebddbf64ab6b38fab9fcbf7cd"
+  },
+  "reuse_counts": {
+    "RETRAIN_REQUIRED": 33,
+    "REUSE_EXACT": 21
+  },
+  "excluded": [
+    "T512",
+    "Anti-Anchor",
+    "AA/AA",
+    "PETS-F",
+    "forecasting"
+  ]
+}

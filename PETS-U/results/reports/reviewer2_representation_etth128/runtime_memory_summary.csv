@@ -1,0 +1,4 @@
+representation,representation_key,mean_sampling_seconds_per_generated_batch,sampling_seconds_sd,mean_peak_gpu_memory_mb,peak_gpu_memory_mb,total_trainable_parameters,representation_module_parameters_combined
+Frequency-as-Channel,frequency_as_channel,38.92699113488197,0.05919552997723771,3696.5831380208333,3696.85302734375,1593528,1149998
+Period-Aligned 2D,period_aligned_2d,147.6744728386402,1.5640400511052215,580.0978190104166,581.43115234375,1591564,1148034
+STFT / Spectrogram,stft_spectrogram,126.50600475668907,0.07600408297612808,555.59423828125,555.70361328125,1591716,1148186

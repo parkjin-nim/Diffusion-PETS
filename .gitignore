@@ -1,0 +1,45 @@
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environments, credentials, and editor state
+.env
+.env.*
+*.pem
+*.key
+.venv/
+venv/
+.vscode/
+.idea/
+
+# Model parameters and large numerical artifacts
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+checkpoints/
+artifacts/
+
+# Runtime products
+*.log
+*.out
+*.pid
+logs/
+metric_logs/
+output/
+OUTPUT/
+exp/
+wandb/
+*training_telemetry*.csv
+*progress_events*.jsonl
+
+# Large experiment trees represented by compact public tables/figures
+PETS-U/results/generated/
+PETS-U/results/references/
+PETS-U/results/ablations_raw/
+PETS-U/results/ablation_anti_anchor/samples/
+PETS-F/results/paper_predictions/
+PETS-F/results/routing_ablation/seed_0/
+PETS-F/results/routing_ablation/traces/

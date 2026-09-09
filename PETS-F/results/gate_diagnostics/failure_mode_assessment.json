@@ -1,0 +1,17 @@
+{
+  "dataset_seed_improvement_spread": {
+    "AirQuality": 27.9681453704834,
+    "ETTh": 0.02670792117714882,
+    "Energy": 0.26840823888778687
+  },
+  "encoder_decoder_sensitivity_supported": false,
+  "high_confidence_quintile_improvement": 0.0017728842794895172,
+  "interpretation_note": "These are post-hoc diagnostic classifications only; no gate setting was changed.",
+  "isolated_high_error_windows_supported": false,
+  "low_confidence_quintile_improvement": 15.042351722717285,
+  "maximum_encoder_decoder_gap": 0.0,
+  "negative_harm_from_worst_error_decile_fraction": 0.3640896348670869,
+  "over_suppression_supported": false,
+  "seed_specific_spectral_distribution_supported": true,
+  "under_suppression_supported": false
+}
